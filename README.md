@@ -1,3 +1,3 @@
 ﻿# HackTheBreak
 
-To start type->npm run dev
+To start type in terminal->npm run dev
