@@ -1,10 +1,10 @@
 import { FormWrapper } from "./FormWrapper";
 
 type AddressData = {
-  street: string;
-  city: string;
-  state: string;
-  zip: string;
+  firstHack: string;
+  source: string;
+  github: string;
+  linkedIn: string;
 };
 
 type AddressFormProps = AddressData & {
@@ -12,42 +12,45 @@ type AddressFormProps = AddressData & {
 };
 
 export function AddressForm({
-  street,
-  city,
-  state,
-  zip,
+  firstHack,
+  source,
+  github,
+  linkedIn,
   updateFields,
 }: AddressFormProps) {
   return (
     <FormWrapper title="Address">
-      <label>Street</label>
+      <label>Is this your first hackathon?</label>
+      <select
+        value={firstHack}
+        onChange={(e) => updateFields({ firstHack: e.target.value })}
+      >
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+      <label>How did you hear about this hackathon?</label>
+      <select
+        value={source}
+        onChange={(e) => updateFields({ source: e.target.value })}
+      >
+        <option value="Discord">Discord</option>
+        <option value="Flyer">Flyer</option>
+        <option value="WordofMouth">Word of Mouth</option>
+        <option value="Other">Other</option>
+      </select>
+      <label>Github</label>
       <input
-        autoFocus
         required
         type="text"
-        value={street}
-        onChange={(e) => updateFields({ street: e.target.value })}
+        value={github}
+        onChange={(e) => updateFields({ github: e.target.value })}
       />
-      <label>City</label>
+      <label>LinkedIn</label>
       <input
         required
         type="text"
-        value={city}
-        onChange={(e) => updateFields({ city: e.target.value })}
-      />
-      <label>State</label>
-      <input
-        required
-        type="text"
-        value={state}
-        onChange={(e) => updateFields({ state: e.target.value })}
-      />
-      <label>Zip</label>
-      <input
-        required
-        type="text"
-        value={zip}
-        onChange={(e) => updateFields({ zip: e.target.value })}
+        value={linkedIn}
+        onChange={(e) => updateFields({ linkedIn: e.target.value })}
       />
     </FormWrapper>
   );

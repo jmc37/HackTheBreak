@@ -1,8 +1,8 @@
 import { FormWrapper } from "./FormWrapper";
 
 type AccountData = {
-  email: string;
-  password: string;
+  team: string;
+  strengths: string;
 };
 
 type AccountFormProps = AccountData & {
@@ -10,26 +10,26 @@ type AccountFormProps = AccountData & {
 };
 
 export function AccountForm({
-  email,
-  password,
+  team,
+  strengths,
   updateFields,
 }: AccountFormProps) {
   return (
     <FormWrapper title="Account Creation">
-      <label>Email</label>
+      <label>Are you joining as a team or an individual?</label>
+      <select
+        value={team}
+        onChange={(e) => updateFields({ team: e.target.value })}
+      >
+        <option value="true">Team</option>
+        <option value="false">Individual</option>
+      </select>
+      <label>What are some of your strengths?</label>
       <input
-        autoFocus
         required
-        type="email"
-        value={email}
-        onChange={(e) => updateFields({ email: e.target.value })}
-      />
-      <label>Password</label>
-      <input
-        required
-        type="password"
-        value={password}
-        onChange={(e) => updateFields({ password: e.target.value })}
+        type="text"
+        value={strengths}
+        onChange={(e) => updateFields({ strengths: e.target.value })}
       />
     </FormWrapper>
   );

@@ -2,30 +2,36 @@ import { FormEvent, useState } from "react";
 import { AccountForm } from "./AccountForm";
 import { AddressForm } from "./AddressForm";
 import { useMultistepForm } from "./useMultiStepForm";
-import { UserForm } from "./userForm";
+import { UserForm } from "./UserForm";
 
 type FormData = {
   firstName: string;
   lastName: string;
-  age: string;
-  street: string;
-  city: string;
-  state: string;
-  zip: string;
-  email: string;
-  password: string;
+  school: string;
+  program: string;
+  schoolEmail: string;
+  term: string;
+  firstHack: string;
+  source: string;
+  github: string;
+  linkedIn: string;
+  team: string;
+  strengths: string;
 };
 
 const INITIAL_DATA: FormData = {
   firstName: "",
   lastName: "",
-  age: "",
-  street: "",
-  city: "",
-  state: "",
-  zip: "",
-  email: "",
-  password: "",
+  school: "",
+  program: "",
+  schoolEmail: "",
+  term: "",
+  firstHack: "",
+  source: "",
+  github: "",
+  linkedIn: "",
+  team: "",
+  strengths: "",
 };
 
 function App() {
