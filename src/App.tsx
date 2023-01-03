@@ -1,10 +1,11 @@
-import { FormEvent, useState, useRef } from "react";
+import { FormEvent, useState } from "react";
 import { AccountForm } from "./AccountForm";
 import { AddressForm } from "./AddressForm";
 import { UserForm } from "./UserForm";
 import { useMultistepForm } from "./useMultiStepForm";
 import emailjs from "@emailjs/browser";
 
+//Declare type for form data
 type FormData = {
   firstName: string;
   lastName: string;
@@ -21,15 +22,16 @@ type FormData = {
   strengths: string;
 };
 
+//Sets empty params for form data
 const INITIAL_DATA: FormData = {
   firstName: "",
   lastName: "",
-  school: "BCIT",
+  school: "",
   program: "",
   schoolEmail: "",
   term: "",
-  firstHack: "Yes",
-  source: "Discord",
+  firstHack: "",
+  source: "",
   github: "",
   linkedIn: "",
   goal: "",
@@ -50,7 +52,7 @@ function App() {
       <AddressForm {...data} updateFields={updateFields} />,
       <AccountForm {...data} updateFields={updateFields} />,
     ]);
-
+  //Sends info to database
   function onSubmit(e: FormEvent) {
     e.preventDefault();
     if (!isLastStep) return next();
@@ -82,10 +84,21 @@ function App() {
         console.log(body);
       });
   }
+  //Sends email to student
   function sendemail() {
     var templateParams = {
       to_name: data.firstName,
+      lname: data.lastName,
+      school: data.school,
+      program: data.program,
       student: data.schoolEmail,
+      term: data.term,
+      first_hackathon: data.firstHack,
+      source: data.source,
+      linkedIn: data.linkedIn,
+      goal: data.goal,
+      team: data.team,
+      strengths: data.strengths,
     };
     emailjs
       .send(
@@ -104,6 +117,7 @@ function App() {
       );
   }
   return (
+    //CSS for form
     <div
       style={{
         position: "relative",
