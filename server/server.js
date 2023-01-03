@@ -48,7 +48,7 @@ try{await User.create({firstName,
 });
 res.send({status:"ok"})
 }catch(error){res.send({status:"error"});
-}
+};
 });
 
 app.listen(port, () => {

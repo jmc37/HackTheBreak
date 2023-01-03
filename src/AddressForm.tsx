@@ -19,7 +19,7 @@ export function AddressForm({
   updateFields,
 }: AddressFormProps) {
   return (
-    <FormWrapper title="Address">
+    <FormWrapper title="Background">
       <label>Is this your first hackathon?</label>
       <select
         value={firstHack}

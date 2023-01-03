@@ -1,8 +1,9 @@
-import { FormEvent, useState } from "react";
+import { FormEvent, useState, useRef } from "react";
 import { AccountForm } from "./AccountForm";
 import { AddressForm } from "./AddressForm";
-import { useMultistepForm } from "./useMultiStepForm";
 import { UserForm } from "./UserForm";
+import { useMultistepForm } from "./useMultiStepForm";
+import emailjs from "@emailjs/browser";
 
 type FormData = {
   firstName: string;
@@ -15,6 +16,7 @@ type FormData = {
   source: string;
   github: string;
   linkedIn: string;
+  goal: string;
   team: string;
   strengths: string;
 };
@@ -22,15 +24,16 @@ type FormData = {
 const INITIAL_DATA: FormData = {
   firstName: "",
   lastName: "",
-  school: "",
+  school: "BCIT",
   program: "",
   schoolEmail: "",
   term: "",
-  firstHack: "",
-  source: "",
+  firstHack: "Yes",
+  source: "Discord",
   github: "",
   linkedIn: "",
-  team: "",
+  goal: "",
+  team: "Team",
   strengths: "",
 };
 
@@ -51,9 +54,55 @@ function App() {
   function onSubmit(e: FormEvent) {
     e.preventDefault();
     if (!isLastStep) return next();
-    alert("Successful Account Creation");
+    sendemail();
+    alert("Form Submitted");
+    fetch("http://localhost:3000/register", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        firstName: data.firstName,
+        lastName: data.lastName,
+        school: data.school,
+        program: data.program,
+        schoolEmail: data.schoolEmail,
+        term: data.term,
+        firstHack: data.firstHack,
+        source: data.source,
+        github: data.github,
+        linkedIn: data.linkedIn,
+        goal: data.goal,
+        team: data.team,
+        strengths: data.strengths,
+      }),
+    })
+      .then((res) => res.json())
+      .then((body) => {
+        console.log(body);
+      });
   }
-
+  function sendemail() {
+    var templateParams = {
+      to_name: data.firstName,
+      student: data.schoolEmail,
+    };
+    emailjs
+      .send(
+        "service_zq7fyvp",
+        "template_89sjcxy",
+        templateParams,
+        "Yr97hAnJ13jcEI4fH"
+      )
+      .then(
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        function (error) {
+          console.log("FAILED...", error);
+        }
+      );
+  }
   return (
     <div
       style={{
@@ -85,7 +134,7 @@ function App() {
               Back
             </button>
           )}
-          <button type="submit">{isLastStep ? "Finish" : "Next"}</button>
+          <button type="submit">{isLastStep ? "Submit" : "Next"}</button>
         </div>
       </form>
     </div>
