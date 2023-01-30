@@ -1,18 +1,10 @@
 .header {
-    width: 100vw;
     background: #3e3db3;
     padding: 2.625rem 5rem;
-    z-index: 2;
-}
-
-.headerBar {
-    height: 2.25rem;
-    margin: 0 auto;
+    width: 100%;
     max-width: 1280px;
-    position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .logo-container {

@@ -3,9 +3,9 @@ import React from 'react';
 function Socials() {
 
     return(
-        <div>
+        <section>
             <h2>HacktheBreak Socials section here</h2>
-        </div>
+        </section>
     );
 }
 

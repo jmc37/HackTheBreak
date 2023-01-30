@@ -3,9 +3,9 @@ import React from 'react';
 function HeroBanner() {
 
     return(
-        <div>
+        <section>
             <h2>herobanner section here</h2>
-        </div>
+        </section>
     );
 }
 

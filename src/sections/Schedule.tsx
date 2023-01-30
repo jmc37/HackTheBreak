@@ -3,9 +3,9 @@ import React from 'react';
 function Schedule() {
 
     return(
-        <div>
+        <section>
             <h2>Schedule section here</h2>
-        </div>
+        </section>
     );
 }
 

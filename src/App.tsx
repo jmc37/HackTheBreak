@@ -7,7 +7,7 @@ import emailjs from "@emailjs/browser";
 
 import Header from "./components/Header/Header";
 import HeroBanner from "./sections/HeroBanner";
-import About from "./sections/About";
+import About from './sections/About';
 import Themes from "./sections/Themes";
 import Schedule from "./sections/Schedule";
 import Sponsors from "./sections/Sponsors";
@@ -133,14 +133,16 @@ function App() {
     //CSS for form
     <>
       <Header />
-      <HeroBanner />
-      <About />
-      <Themes />
-      <Schedule />
-      <Sponsors />
-      <FAQ />
-      <Contact />
-      <Socials />
+      <main>
+        <HeroBanner />
+        <About />
+        <Themes />
+        <Schedule />
+        <Sponsors />
+        <FAQ />
+        <Contact />
+        <Socials />
+      </main>
       <div
         style={{
           position: "relative",
