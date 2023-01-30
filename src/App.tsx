@@ -6,6 +6,14 @@ import { useMultistepForm } from "./useMultiStepForm";
 import emailjs from "@emailjs/browser";
 
 import Header from "./components/Header/Header";
+import HeroBanner from "./sections/herobanner";
+import About from "./sections/About";
+import Themes from "./sections/Themes";
+import Schedule from "./sections/Schedule";
+import Sponsors from "./sections/Sponsors";
+import FAQ from "./sections/FAQ";
+import Contact from "./sections/Contact";
+import Socials from "./sections/Socials";
 import Footer from "./components/Footer/Footer";
 
 import "./App.css";
@@ -125,7 +133,14 @@ function App() {
     //CSS for form
     <>
       <Header />
-      <h1>hello world</h1>
+      <HeroBanner />
+      <About />
+      <Themes />
+      <Schedule />
+      <Sponsors />
+      <FAQ />
+      <Contact />
+      <Socials />
       <div
         style={{
           position: "relative",
