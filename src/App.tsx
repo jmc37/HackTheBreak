@@ -6,7 +6,7 @@ import { useMultistepForm } from "./useMultiStepForm";
 import emailjs from "@emailjs/browser";
 
 import Header from "./components/Header/Header";
-import HeroBanner from "./sections/herobanner";
+import HeroBanner from "./sections/HeroBanner";
 import About from "./sections/About";
 import Themes from "./sections/Themes";
 import Schedule from "./sections/Schedule";
