@@ -3,8 +3,15 @@ import React from 'react';
 function Schedule() {
 
     return(
-        <section>
-            <h2>Schedule section here</h2>
+        <section id="schedule">
+            <h2>Hackathon Schedule</h2>
+            <div>
+                <div>Event 1</div>
+                <div>Event 2</div>
+                <div>Event 3</div>
+                <div>Event 4</div>
+                <div>Event 5</div>
+            </div>
         </section>
     );
 }
