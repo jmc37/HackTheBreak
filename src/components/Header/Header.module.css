@@ -36,6 +36,7 @@
     align-items: center;
     justify-content: flex-end;
     gap: 3.45375rem;
+    margin-left: auto;
 }
 
 .gn a {
