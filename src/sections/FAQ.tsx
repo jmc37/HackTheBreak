@@ -2,7 +2,6 @@ import React from 'react';
 import MuiAccordion, { AccordionProps } from '@mui/material/Accordion';
 import { styled } from '@mui/material/styles';
 import AccordionSummary from '@mui/material/AccordionSummary';
-// import AccordionDetails from '@mui/material/AccordionDetails';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
