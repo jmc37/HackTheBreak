@@ -15,7 +15,7 @@ function HeroBanner() {
                 {/* countdown here */}
                 <p>Until Registration Closes</p>
             </div>
-            <div className={styles.bannerBtns}>
+            <div className={styles.bannerBtnContainer}>
                 <button><a href="#" title="Link to Register">Register</a></button>
                 <button><a href="#" title="Link to Learn more">Learn more</a></button>
             </div>
