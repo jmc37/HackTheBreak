@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../styles/Sponsors.module.css';
-import sponsorLogo1 from '../assets/hackthebreak2022_logo.png';
+import sponsorLogo1 from '../assets/hackthebreak_logo.png';
 
 function Sponsors() {
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../styles/Themes.module.css';
-import themeImage from '../assets/hackthebreak2022_logo.png';
+import themeImage from '../assets/hackthebreak_logo.png';
 
 function Themes() {
 

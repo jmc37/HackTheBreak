@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Header.module.css';
 
-import HTBlogo from '../../assets/hackthebreak2022_logo.png';
+import HTBlogo from '../../assets/hackthebreak_logo.png';
 import { links } from './anchorTags.json';
 
 type Link = {
