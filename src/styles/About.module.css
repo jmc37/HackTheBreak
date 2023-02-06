@@ -8,13 +8,34 @@
     gap: 1rem;
 }
 
-.statBox {
+.statBoxLight, .statBoxDark {
     width: 100%;
-    height: 185px;
-    background-color: #456d9e;
+    height: 11.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.25rem var(--shadow);
 }
 
-@media (min-width: 768px) {
+.statBoxLight {
+    background-color: var(--bg-blue);
+}
+
+.statBoxDark {
+    background-color: var(--primary-blue);
+}
+
+.statBoxLight p, .statBoxDark p {
+    font-family: 'Blinker', sans-serif;
+    font-weight: 700;
+    font-size: 2.75rem;
+    color: var(--primary-orange);
+    -webkit-text-stroke-width: 0.0625rem;
+    -webkit-text-stroke-color: var(--black-color);
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 3rem;
+}
+
+@media (min-width: 1100px) {
     .aboutSection {
         display: grid;
         column-gap: 7rem;
@@ -29,17 +50,18 @@
         grid-area: header;
         display: flex;
         align-self: flex-end;
-        margin: 0;
+        margin: 10.625rem 0 0;
     }
 
     .statContainer {
         grid-area: stat;
         flex-wrap: wrap;
         align-items: right;
+        gap: 1.478125rem;
     }
 
-    .statBox {
-        width: 45%;
+    .statBoxLight, .statBoxDark {
+        width: 47%;
         flex-wrap: wrap;
     }
 
@@ -48,6 +70,7 @@
         display: flex;
         flex-direction: column;
         align-items: end;
+        margin-top: auto;
     }
 
     .writtenContainer p {

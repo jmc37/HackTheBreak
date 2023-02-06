@@ -36,7 +36,7 @@
 .bannerBtns {
     padding: 0.8125rem 1.875rem;
     border-radius: 0.5rem;
-    box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.25rem 0.25rem var(--shadow);
     background-color: var(--bg-blue);
     -webkit-text-stroke-width: 0.09375rem;
     -webkit-text-stroke-color: var(--primary-blue);
