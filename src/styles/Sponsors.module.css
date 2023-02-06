@@ -1,7 +1,7 @@
 .sponsorBox {
     display: flex;
     flex-direction: column;
-    column-gap: 10rem;
+    column-gap: 4rem;
     padding: 1rem 7.125rem;
 }
 
@@ -36,7 +36,7 @@
     border-bottom: 0.1rem solid var(--secondary-orange);
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 800px) {
     .sponsorBox {
         flex-direction: row;
         justify-content: space-around;

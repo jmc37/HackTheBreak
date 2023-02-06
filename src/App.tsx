@@ -15,6 +15,7 @@ import FAQ from "./sections/FAQ";
 import Contact from "./sections/Contact";
 import Socials from "./sections/Socials";
 import Footer from "./components/Footer/Footer";
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 import "./App.css";
 
@@ -52,7 +53,18 @@ const INITIAL_DATA: FormData = {
   strengths: "",
 };
 
+// Create Theme via Mui
+const theme = createTheme({
+  typography: {
+    fontFamily: [
+      'Fira Code', 
+      'monospace'
+    ].join(','),
+  }
+});
+
 function App() {
+
   const [data, setData] = useState(INITIAL_DATA);
   function updateFields(fields: Partial<FormData>) {
     setData((prev) => {
@@ -132,6 +144,7 @@ function App() {
   return (
     //CSS for form
     <>
+      <ThemeProvider theme={theme}>
       <Header />
       <div className="wrapper">
         <main>
@@ -180,6 +193,7 @@ function App() {
         </div>
       </div>
       <Footer/>
+      </ThemeProvider>
     </>
   );
 }
