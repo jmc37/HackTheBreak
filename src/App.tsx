@@ -145,8 +145,8 @@ function App() {
     //CSS for form
     <>
       <ThemeProvider theme={theme}>
-      <Header />
       <div className="wrapper">
+        <Header />
         <main>
           <HeroBanner />
           <About />
@@ -191,8 +191,8 @@ function App() {
             </div>
           </form>
         </div>
+        <Footer/>
       </div>
-      <Footer/>
       </ThemeProvider>
     </>
   );
