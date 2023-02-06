@@ -56,6 +56,11 @@ section {
     --grey-color: #EEEEEE;
 }
 
+::selection {
+    background: var(--tertiary-blue);
+    color: var(--white-color);
+}
+
 @media (min-width: 768px) {
     section {
         padding: 6.25rem 5rem;
