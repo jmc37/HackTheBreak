@@ -53,6 +53,7 @@ section {
     --secondary-orange: #E47D04;
     --bg-blue: #C0DDFF;
     --shadow:rgba(0, 0, 0, 0.15);
+    --grey-color: #EEEEEE;
 }
 
 @media (min-width: 768px) {
