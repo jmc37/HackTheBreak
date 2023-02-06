@@ -11,10 +11,12 @@
 
 .themeBtn {
     background-color: var(--primary-blue);
-    border: 0.09375rem solid var(--secondary-blue);
+    border: 0.1rem solid var(--secondary-blue);
     padding: 0.8125rem 1.875rem;
     border-radius: 0.5rem;
     box-shadow: 0px 0.25rem 0.25rem var(--shadow);
+    transition: ease-in-out background-color;
+    transition-duration: 0.35s;
 }
 
 .themeBtnLink {
@@ -48,5 +50,9 @@
 
     .writtenContainer h2 {
         margin-bottom: -0.03125rem;
+    }
+
+    .themeBtn:hover {
+        background-color: var(--secondary-orange);
     }
 }
