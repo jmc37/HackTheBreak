@@ -2,3 +2,8 @@ footer {
     text-align: center;
     padding: 2.5rem 0;
 }
+
+.mlh_link {
+    color: var(--secondary-orange);
+    border-bottom: 0.1rem solid var(--secondary-orange);
+}
