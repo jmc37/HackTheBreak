@@ -1,0 +1,39 @@
+.faqContainer, 
+.faqBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.faqContainer {
+    row-gap: 1rem;
+}
+
+.faqGraphic {
+    width: 100%;
+    height: 35.9375rem;
+    box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.15);
+}
+
+.accordion {
+    margin-bottom: 0.8125rem;
+    border-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    
+    .faqContainer {
+        flex-direction: row;
+        column-gap: 2rem;
+    }
+
+    .faqBox {
+        align-items: flex-end;
+    }
+
+    .faqGraphic {
+        width: 50%;
+        height: 38rem;
+    }
+}

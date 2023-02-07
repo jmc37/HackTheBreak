@@ -1,0 +1,60 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10.5rem 0 5rem;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(192, 221, 255, 0.3) 46.35%, rgba(192, 221, 255, 0) 100%);
+}
+
+.tagline {
+    font-family: 'Blinker', sans-serif;
+    font-weight: 700;
+    font-size: 2.75rem;
+    color: var(--primary-orange);
+    -webkit-text-stroke-width: 0.0625rem;
+    -webkit-text-stroke-color: var(--black-color);
+    margin: 0 0 2.5625rem;
+}
+
+.eventDetails {
+    display: flex;
+    gap: 4.625rem;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 3.875rem;
+}
+
+.bannerBtnContainer {
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem;
+    margin: 2.5rem auto 0;
+}
+
+.bannerBtns {
+    padding: 0.8125rem 1.875rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.25rem var(--shadow);
+    background-color: var(--bg-blue);
+    border: 0.1rem solid var(--primary-blue);
+    font-family: 'Fira Code', monospace;
+    font-size: 1.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: ease-in-out background-color;
+    transition-duration: 0.35s;
+    cursor: pointer;
+}
+
+.bannerBtns a {
+    color: var(--secondary-blue);
+}
+
+@media (min-width: 1100px) {
+    .bannerBtns:hover {
+        background-color: var(--primary-orange);
+    }
+}

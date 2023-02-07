@@ -1,0 +1,49 @@
+.sponsorBox {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 1rem 7.125rem;
+    margin-bottom: 4rem;
+}
+
+.sponsorLogo {
+    width: auto;
+    height: auto;
+}
+
+.sponsorBtn {
+    display: flex;
+    margin: 4rem auto 0;
+    font-size: 1.125rem;
+    font-weight: 600;
+    box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.15);
+    background-color: var(--grey-color);
+    border: 0.1rem solid var(--secondary-blue);
+    padding: 0.8125rem 1.875rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0.25rem 0.25rem var(--shadow);
+    transition: ease-in-out background-color;
+    transition-duration: 0.35s;
+    cursor: pointer;
+}
+
+.devpostLink {
+    color: var(--black-color);
+    font-family: 'Fira Code', monospace;
+}
+
+.devpostHighlight {
+    color: var(--secondary-orange);
+    border-bottom: 0.1rem solid var(--secondary-orange);
+}
+
+@media (min-width: 800px) {
+    .sponsorBox {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .sponsorBtn {
+        margin: 8rem auto 0;
+    }
+}

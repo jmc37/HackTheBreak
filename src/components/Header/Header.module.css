@@ -1,0 +1,44 @@
+.header {
+    background: #3e3db3;
+    padding: 2.625rem 5rem;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.logo {
+    height: 3.75rem;
+    width: auto;
+}
+
+.gnTrigger {
+    position: relative;
+    width: 3em;
+    height: 3em;
+    border: none;
+    outline: 0;
+    background: rgb(0 0 0 / 1);
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.gn {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 3.45375rem;
+    margin-left: auto;
+}
+
+.gn a {
+    color: #fff;
+}

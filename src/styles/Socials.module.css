@@ -1,0 +1,21 @@
+.socialsSection {
+    display: flex;
+    margin: 0 auto;
+}
+
+.socialsHeading {
+    font-family: 'Fira Code', monospace;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--black-color);
+    letter-spacing: -0.05rem;
+    text-align: center;
+}
+
+.socialsContainer {
+    display: flex;
+    gap: 4.125rem;
+    list-style: none;
+    margin: 2rem 0 0;
+    padding: 0;
+}
