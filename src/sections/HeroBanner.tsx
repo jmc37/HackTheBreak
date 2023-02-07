@@ -17,8 +17,8 @@ function HeroBanner() {
                     <p>Until Registration Closes</p>
                 </div>
                 <div className={styles.bannerBtnContainer}>
-                    <button className={styles.bannerBtns}><a href="#" title="Link to Register">Register now</a></button>
-                    <button className={styles.bannerBtns}><a href="#" title="Link to Learn more">Learn more</a></button>
+                    <button className={styles.bannerBtns}><a href="#signupform" title="Link to Register">Register now</a></button>
+                    <button className={styles.bannerBtns}><a href="#about" title="Link to Learn more">Learn more</a></button>
                 </div>
             </div>
         </section>

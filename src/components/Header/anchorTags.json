@@ -2,33 +2,28 @@
     "links":[
         {
             "label": "About",
-            "href": "home#about",
+            "href": "#about",
             "title": "About us"
         },
         {
             "label": "Theme",
-            "href": "home#theme",
+            "href": "#theme",
             "title": "Go to Themes"
         },
         {
             "label": "Schedule",
-            "href": "home#schedule",
+            "href": "#schedule",
             "title": "Go to Schedule"
         },
         {
             "label": "Sponsors",
-            "href": "home#sponsors",
+            "href": "#sponsors",
             "title": "Go to Sponsors"
         },
         {
             "label": "FAQ",
-            "href": "home#FAQ",
+            "href": "#FAQ",
             "title": "Go to FAQ"
-        },
-        {
-            "label": "Contact",
-            "href": "home#contact",
-            "title": "Contact Us"
         }
     ]
 }
