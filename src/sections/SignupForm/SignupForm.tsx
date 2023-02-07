@@ -124,7 +124,7 @@ function SignupForm() {
           <div className="container">
             <div className={styles.signupDesc}>
               <h2>Register as a hacker!</h2>
-              <p>Join Hack the Break 2023 by registering <br className={styles.lineBreak} /> as a hacker in the form below:</p>
+              <p>Join Hack the Break 2023 by registering <br className="lineBreak" /> as a hacker in the form below:</p>
             </div>
             <form 
               className={styles.signupContainer}

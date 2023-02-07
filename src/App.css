@@ -74,4 +74,8 @@ section {
     section {
         padding: 6.25rem 5rem;
     }
+
+    .lineBreak {
+        display: none;
+    }
 }
