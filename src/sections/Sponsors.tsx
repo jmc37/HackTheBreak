@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from '../styles/Sponsors.module.css';
 import bcitsaLogo from '../assets/bcitsa_logo.png';
 import ilmLogo from '../assets/ilm_logo.png';

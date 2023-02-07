@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from '../styles/Socials.module.css';
 import computingClubLogo from '../assets/computingclub_logo.png';
 import bcitWicLogo from '../assets/bcitwic_logo.png';
