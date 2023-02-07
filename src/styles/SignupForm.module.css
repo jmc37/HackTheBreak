@@ -1,0 +1,102 @@
+.signupSection {
+    background-color: var(--bg-blue);
+}
+
+.signupDesc {
+    text-align: center;
+}
+
+.signupContainer {
+    position: relative;
+    border: 0.0625rem solid var(--secondary-blue);
+    padding: 2rem;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    max-width: max-content;
+    background-color: var(--white-color);
+}
+
+.formBox {
+    display: grid;
+    gap: 1rem 0.5rem;
+    justify-content: flex-start;
+}
+
+select, input {
+    font-family: 'Fira Code', monospace;
+}
+
+.signupPageCounter {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+}
+
+.signupBtnContainer {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: flex-end;
+}
+
+.submitBtn {
+    color: var(--white-color);
+    font-family: 'Fira Code', monospace;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0.8125rem 1.875rem;
+    background-color: var(--primary-blue);
+    border: 0.1rem solid var(--secondary-blue);
+    border-radius: 0.5rem;
+    box-shadow: 0px 0.25rem 0.25rem var(--shadow);
+    transition: ease-in-out background-color;
+    transition-duration: 0.35s;
+    cursor: pointer;
+    width: 100%;
+}
+
+.nextBtn {
+    color: var(--black-color);
+    font-family: 'Fira Code', monospace;
+    font-size: 1.25rem;
+    font-weight: 600;
+    box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.15);
+    background-color: var(--grey-color);
+    border: 0.0625rem solid var(--secondary-blue);
+    padding: 0.8125rem 1.875rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0.25rem 0.25rem var(--shadow);
+    transition: ease-in-out background-color;
+    transition-duration: 0.35s;
+    cursor: pointer;
+    width: 100%;
+}
+
+@media (min-width: 420px) {
+    .signupBtnContainer {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 768px) {
+    .formBox {
+        gap: 1.5rem;
+        grid-template-columns: auto minmax(auto, 400px);
+    }
+
+    .signupBtnContainer {
+        gap: 1rem;
+    }
+
+    .lineBreak {
+        display: none;
+    }
+}
+
+@media (min-width: 1100px) {
+    .submitBtn:hover {
+        background-color: var(--secondary-orange);
+    }
+}
