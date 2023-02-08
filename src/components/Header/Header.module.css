@@ -1,9 +1,12 @@
 .header {
-    background: #3e3db3;
-    padding: 2.625rem 5rem;
+    background: #fff;
+    padding: 2rem 1.25rem;
     width: auto;
+    height: auto;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .logo-container {
@@ -18,27 +21,121 @@
     width: auto;
 }
 
-.gnTrigger {
-    position: relative;
-    width: 3em;
-    height: 3em;
-    border: none;
-    outline: 0;
-    background: rgb(0 0 0 / 1);
-    margin-left: auto;
+.burgerNav {
+    border: 0;
+    height: 1.6875rem;
+    width: 2.1875rem;
     cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 2.5rem;
+    transform: translateY(-50%);
+    display: block;
+    background-color: var(--white-clear);
 }
 
-.gn {
-    display: flex;
-    list-style: none;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 3.45375rem;
+.gnExpanded {
     margin-left: auto;
+    position: absolute;
+    top: 7.75rem;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 7.75rem);
+    background-color: var(--bg-blue);
+    transition: transform top ease-in-out all;
+    transition-duration: 0.3s;
 }
 
-.gn a {
-    color: #fff;
+.gnExpanded ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.gnExpanded li {
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 0.125rem solid var(--secondary-blue);
+}
+
+.gn ul {
+    display: none;
+}
+
+.gn a, .gnExpanded a {
+    color: var(--black-color);
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100%;
+    padding: 1.5rem 0;
+}
+
+.bannerBtnContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+}
+
+.bannerBtnClosed {
+    display: none;
+}
+
+.bannerBtns {
+    padding: 0.8125rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.25rem var(--shadow);
+    background-color: var(--secondary-blue);
+    border: 0.1rem solid var(--primary-blue);
+    font-family: 'Fira Code', monospace;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    width: 90%;
+}
+
+.bannerBtns a {
+    color: var(--bg-blue);
+}
+
+@media (min-width: 426px) {
+    .bannerBtnContainer {
+        flex-direction: row;
+        padding: 0 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        padding: 2rem 5rem;
+    }
+
+    .burgerNav {
+        display: none;
+    }
+
+    .gn ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        margin-left: auto;
+        margin: 0;
+        gap: 3.75rem;
+    }
+
+    .gn li {
+        display: flex;
+        flex-direction: column;
+        gap: 3.75rem;
+    }
+
+    .gnExpanded li {
+        display: none;
+    }
 }

@@ -63,6 +63,7 @@ section {
     --bg-blue: #C0DDFF;
     --shadow:rgba(0, 0, 0, 0.15);
     --grey-color: #EEEEEE;
+    --white-clear: #ffffff00;
 }
 
 ::selection {
