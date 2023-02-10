@@ -9,7 +9,7 @@
 .signupContainer {
     position: relative;
     border: 0.0625rem solid var(--secondary-blue);
-    padding: 2rem;
+    padding: 1rem;
     margin: 0 auto;
     border-radius: 0.5rem;
     max-width: max-content;
@@ -80,10 +80,16 @@ select, input {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 500px) {
     .formBox {
         gap: 1.5rem;
         grid-template-columns: auto minmax(auto, 400px);
+    }
+}
+
+@media (min-width: 768px) {
+    .signupContainer {
+        padding: 2rem;
     }
 
     .signupBtnContainer {
