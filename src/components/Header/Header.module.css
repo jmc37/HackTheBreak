@@ -1,18 +1,5 @@
-.header {
-    background: #fff;
-    padding: 2rem 1.25rem;
-    width: auto;
-    height: auto;
+.logoContainer {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     cursor: pointer;
 }
 
@@ -21,17 +8,19 @@
     width: auto;
 }
 
+.burgerContainer {
+    display: relative;
+}
+
 .burgerNav {
-    border: 0;
+    border: none;
     height: 1.6875rem;
     width: 2.1875rem;
     cursor: pointer;
-    position: absolute;
-    top: 50%;
-    right: 2.5rem;
-    transform: translateY(-50%);
-    display: block;
+    margin-left: auto;
+    position: relative;
     background-color: var(--white-clear);
+    margin-right: 3.125rem;
 }
 
 .gnExpanded {
@@ -39,7 +28,7 @@
     position: absolute;
     top: 7.75rem;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: calc(100vh - 7.75rem);
     background-color: var(--bg-blue);
     transition: transform top ease-in-out all;
@@ -59,8 +48,17 @@
     border-bottom: 0.125rem solid var(--secondary-blue);
 }
 
+.gn {
+    display: none;
+    position: absolute;
+    top: 4.5em;
+    left: -2em;
+}
+
 .gn ul {
     display: none;
+    padding: 0;
+    margin: 0;
 }
 
 .gn a, .gnExpanded a {
@@ -113,19 +111,21 @@
 @media (min-width: 768px) {
     .header {
         padding: 2rem 5rem;
+        height: 4.25rem;
     }
 
     .burgerNav {
         display: none;
     }
 
+    .gn {
+        display: flex;
+        position: static;
+        height: auto;
+    }
+
     .gn ul {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
-        margin-left: auto;
-        margin: 0;
         gap: 3.75rem;
     }
 
