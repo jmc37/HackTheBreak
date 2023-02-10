@@ -11,7 +11,7 @@
 
 .statBoxLight, .statBoxDark {
     width: 100%;
-    height: 10rem;
+    height: 9.5rem;
     border-radius: 0.5rem;
     box-shadow: 0 0.25rem 0.25rem var(--shadow);
     display: flex;
