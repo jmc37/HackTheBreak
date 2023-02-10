@@ -79,6 +79,7 @@
     }
 
     .bannerBtnContainer {
+        flex-direction: row;
         gap: 3.5rem;
     }
 
