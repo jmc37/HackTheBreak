@@ -117,4 +117,8 @@ section {
     .lineBreak {
         display: block;
     }
+
+    .headingBreak {
+        display: none;
+    }
 }

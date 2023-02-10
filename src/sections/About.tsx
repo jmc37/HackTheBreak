@@ -5,7 +5,7 @@ function About() {
     return(
         <section id="about" className="container">
             <div className={styles.aboutSection}>
-                <h2 className={styles.aboutHeader}>About Hack the Break</h2>
+                <h2 className={styles.aboutHeader}>About Hack<br className="headingBreak" /> the Break</h2>
                 <div className={styles.statContainer}>
                     {/* Carousel  */}
                     <div className={styles.statBoxLight}>
