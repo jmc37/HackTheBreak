@@ -9,6 +9,17 @@ h2 {
 .scheduleContainer {
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.scheduleContainer::after {
+    content: '';
+    position: absolute;
+    width: 0.25rem;
+    background-color: var(--secondary-blue);
+    top: 1rem;
+    bottom: 0;
+    left: 50%;
 }
 
 .activityContainer {
@@ -25,6 +36,7 @@ h2 {
     color: var(--white-color);
     z-index: 1;
     box-shadow: 0px 0.25rem 0.25rem var(--shadow);
+    z-index: 2;
 }
 
 .activityTime {
@@ -32,28 +44,49 @@ h2 {
 }
 
 .activityBox {
-    width: 100%;
+    width: auto;
     height: auto;
-    /* height: 12.875rem; */
     background-color: var(--primary-orange);
     border: 0.09375rem solid var(--black-color);
     text-align: center;
     padding: 3.125rem 2.75rem;
     box-shadow: 0px 0.25rem 0.25rem var(--shadow);
+    z-index: 1;
 }
 
 @media (min-width: 768px) {
+    
+}
+
+@media (min-width: 1024px) {
     .scheduleContainer {
         flex-direction: row;
-        column-gap: 1rem;
+        column-gap: 0.5rem;
+    }
+
+    .scheduleContainer::after {
+        rotate: 90deg;
+        top: -115%;
+        height: 43.75rem;
     }
 
     .activityContainer {
         flex-direction: row;
-        column-gap: 1rem;
+        column-gap: 0.5rem;
     }
 
     .hackDay {
         display: none;
+    }
+
+    .activityBox {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1100px) {
+    .scheduleContainer::after {
+        top: -160%;
+        height: 56.25rem;
     }
 }

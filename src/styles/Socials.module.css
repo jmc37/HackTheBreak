@@ -6,7 +6,7 @@
 .socialsHeading {
     font-family: 'Fira Code', monospace;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     color: var(--black-color);
     letter-spacing: -0.05rem;
     text-align: center;
@@ -14,8 +14,27 @@
 
 .socialsContainer {
     display: flex;
-    gap: 4.125rem;
+    flex-direction: row;
+    gap: 0.12rem;
     list-style: none;
-    margin: 2rem 0 0;
+    margin: 2.5rem 0 0;
     padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.socialsContainer li {
+    scale: 90%;
+}
+
+@media (min-width: 536px) {
+    .socialsHeading {
+        font-size: 1.5rem;
+    }
+
+    .socialsContainer {
+        gap: 4.125rem;
+        margin: 2rem 0 0;
+        flex-wrap: nowrap;
+    }
 }
