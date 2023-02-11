@@ -40,7 +40,7 @@ a {
 }
 
 main {
-    margin-top: 7.75rem;
+    margin-top: 6rem;
 }
 
 .wrapper {
@@ -66,6 +66,7 @@ section {
     --secondary-orange: #E47D04;
     --bg-blue: #C0DDFF;
     --shadow:rgba(0, 0, 0, 0.15);
+    --shadow-light:rgba(0, 0, 0, 0.06);
     --grey-color: #EEEEEE;
     --white-clear: #ffffff00;
 }
