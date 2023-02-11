@@ -1,4 +1,4 @@
-import styles from '../../styles/SignupForm.module.css';
+import styles from "../../styles/SignupForm.module.css";
 import { FormEvent, useState } from "react";
 import { AccountForm } from "./AccountForm";
 import { AddressForm } from "./AddressForm";
@@ -8,42 +8,41 @@ import emailjs from "@emailjs/browser";
 
 //Declare type for form data
 type FormData = {
-    firstName: string;
-    lastName: string;
-    school: string;
-    program: string;
-    schoolEmail: string;
-    term: string;
-    firstHack: string;
-    source: string;
-    github: string;
-    linkedIn: string;
-    goal: string;
-    team: string;
-    strengths: string;
-  };
-  
+  name: string;
+  school: string;
+  program: string;
+  schoolEmail: string;
+  studentNumber: string;
+  term: string;
+  firstHack: string;
+  source: string;
+  github: string;
+  linkedIn: string;
+  goal: string;
+  team: string;
+  strengths: string;
+};
+
 //Sets empty params for form data
 const INITIAL_DATA: FormData = {
-    firstName: "",
-    lastName: "",
-    school: "",
-    program: "",
-    schoolEmail: "",
-    term: "",
-    firstHack: "",
-    source: "",
-    github: "",
-    linkedIn: "",
-    goal: "",
-    team: "Team",
-    strengths: "",
+  name: "",
+  school: "BCIT",
+  program: "",
+  schoolEmail: "",
+  studentNumber: "",
+  term: "",
+  firstHack: "Yes",
+  source: "Discord",
+  github: "",
+  linkedIn: "",
+  goal: "",
+  team: "Team",
+  strengths: "",
 };
 
 function SignupForm() {
-
-    const [data, setData] = useState(INITIAL_DATA);
-    function updateFields(fields: Partial<FormData>) {
+  const [data, setData] = useState(INITIAL_DATA);
+  function updateFields(fields: Partial<FormData>) {
     setData((prev) => {
       return { ...prev, ...fields };
     });
@@ -66,11 +65,11 @@ function SignupForm() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        firstName: data.firstName,
-        lastName: data.lastName,
+        name: data.name,
         school: data.school,
         program: data.program,
         schoolEmail: data.schoolEmail,
+        studentNumber: data.schoolEmail,
         term: data.term,
         firstHack: data.firstHack,
         source: data.source,
@@ -89,11 +88,11 @@ function SignupForm() {
   //Sends email to student
   function sendemail() {
     var templateParams = {
-      to_name: data.firstName,
-      lname: data.lastName,
+      to_name: data.name,
       school: data.school,
       program: data.program,
       student: data.schoolEmail,
+      studentNumber: data.studentNumber,
       term: data.term,
       first_hackathon: data.firstHack,
       source: data.source,
@@ -119,37 +118,35 @@ function SignupForm() {
       );
   }
 
-    return(
-        <section id="signupform" className={styles.signupSection}>
-          <div className="container">
-            <div className={styles.signupDesc}>
-              <h2>Register as a hacker!</h2>
-              <p>Join Hack the Break 2023 by registering <br className="lineBreak" /> as a hacker in the form below:</p>
-            </div>
-            <form 
-              className={styles.signupContainer}
-              onSubmit={onSubmit}
-            >
-              <div className={styles.signupPageCounter}>
-                {currentStepIndex + 1}/{steps.length}
-              </div>
-              {step}
-              <div className={styles.signupBtnContainer}>
-                {!isFirstStep && (
-                  <button 
-                    className={styles.nextBtn}
-                    type="button" 
-                    onClick={back}
-                  >
-                    Back
-                  </button>
-                )}
-                <button type="submit" className={styles.submitBtn}>{isLastStep ? "Submit" : "Next"}</button>
-              </div>
-            </form>
+  return (
+    <section id="signupform" className={styles.signupSection}>
+      <div className="container">
+        <div className={styles.signupDesc}>
+          <h2>Register as a hacker!</h2>
+          <p>
+            Join Hack the Break 2023 by registering <br className="lineBreak" />{" "}
+            as a hacker in the form below:
+          </p>
+        </div>
+        <form className={styles.signupContainer} onSubmit={onSubmit}>
+          <div className={styles.signupPageCounter}>
+            {currentStepIndex + 1}/{steps.length}
           </div>
-        </section>
-    );
+          {step}
+          <div className={styles.signupBtnContainer}>
+            {!isFirstStep && (
+              <button className={styles.nextBtn} type="button" onClick={back}>
+                Back
+              </button>
+            )}
+            <button type="submit" className={styles.submitBtn}>
+              {isLastStep ? "Submit" : "Next"}
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  );
 }
 
 export default SignupForm;

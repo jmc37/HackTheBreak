@@ -1,10 +1,10 @@
 import { FormWrapper } from "./FormWrapper";
 
 type UserData = {
-  firstName: string;
-  lastName: string;
+  name: string;
   school: string;
   program: string;
+  studentNumber: string;
   schoolEmail: string;
   term: string;
 };
@@ -14,30 +14,23 @@ type UserFormProps = UserData & {
 };
 
 export function UserForm({
-  firstName,
-  lastName,
+  name,
   school,
   program,
+  studentNumber,
   schoolEmail,
   term,
   updateFields,
 }: UserFormProps): JSX.Element {
   return (
     <FormWrapper title="User Details">
-      <label>First Name</label>
+      <label>Name</label>
       <input
         autoFocus
         required
         type="text"
-        value={firstName}
-        onChange={(e) => updateFields({ firstName: e.target.value })}
-      />
-      <label>Last Name</label>
-      <input
-        required
-        type="text"
-        value={lastName}
-        onChange={(e) => updateFields({ lastName: e.target.value })}
+        value={name}
+        onChange={(e) => updateFields({ name: e.target.value })}
       />
       <label>Which school do you attend?</label>
       <select
@@ -62,6 +55,13 @@ export function UserForm({
         type="text"
         value={schoolEmail}
         onChange={(e) => updateFields({ schoolEmail: e.target.value })}
+      />{" "}
+      <label>Student Number</label>
+      <input
+        required
+        type="text"
+        value={studentNumber}
+        onChange={(e) => updateFields({ studentNumber: e.target.value })}
       />
       <label>Term</label>
       <input
