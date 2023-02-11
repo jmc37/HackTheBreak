@@ -188,6 +188,11 @@ function FAQ() {
                         </Accordion>
                     </div>
                 </div>
+                <div className={styles.htbContact}>
+                    <p>Questions still unanswered? Interested in sponsoring Hack the Break 2023?</p>
+                    <p><span className={styles.reachOut}>Reach out to us at:</span></p>
+                    <p><a className={styles.htbEmail} href="mailto:hackthebreak2022@gmail.com">hackthebreak2022@gmail.com</a></p>
+                </div>
             </div>
         </section>
     );
