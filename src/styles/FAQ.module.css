@@ -19,6 +19,31 @@
     border-bottom: 0;
 }
 
+.htbContact {
+    text-align: center;
+    max-width: 25rem;
+    margin: 4rem auto 0;
+}
+
+.htbContact p {
+    margin: 0.75rem auto;
+}
+
+.htbEmail {
+    font-weight: 700;
+    text-decoration: underline;
+    color: var(--secondary-blue);
+    background-color: var(--bg-blue);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.06);
+}
+
+.reachOut {
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
 @media (min-width: 768px) {
     
     .faqContainer {
@@ -36,5 +61,9 @@
         width: 50%;
         height: 38rem;
         box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.15);
+    }
+
+    .htbContact {
+        margin: 6rem auto 0;
     }
 }
