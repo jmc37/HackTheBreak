@@ -1,0 +1,92 @@
+h2 {
+    margin: 0 0 1rem;
+}
+
+.scheduleSection {
+    background-color: var(--bg-blue);
+}
+
+.scheduleContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.scheduleContainer::after {
+    content: '';
+    position: absolute;
+    width: 0.25rem;
+    background-color: var(--secondary-blue);
+    top: 1rem;
+    bottom: 0;
+    left: 50%;
+}
+
+.activityContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.hackDay {
+    margin: 1rem auto -1rem;
+    padding: 0.75rem 1.875rem;
+    text-align: center;
+    background-color: var(--secondary-blue);
+    color: var(--white-color);
+    z-index: 1;
+    box-shadow: 0px 0.25rem 0.25rem var(--shadow);
+    z-index: 2;
+}
+
+.activityTime {
+    font-weight: 600;
+}
+
+.activityBox {
+    width: auto;
+    height: auto;
+    background-color: var(--primary-orange);
+    border: 0.09375rem solid var(--black-color);
+    text-align: center;
+    padding: 3.125rem 2.75rem;
+    box-shadow: 0px 0.25rem 0.25rem var(--shadow);
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+    
+}
+
+@media (min-width: 1024px) {
+    .scheduleContainer {
+        flex-direction: row;
+        column-gap: 0.5rem;
+    }
+
+    .scheduleContainer::after {
+        rotate: 90deg;
+        top: -115%;
+        height: 43.75rem;
+    }
+
+    .activityContainer {
+        flex-direction: row;
+        column-gap: 0.5rem;
+    }
+
+    .hackDay {
+        display: none;
+    }
+
+    .activityBox {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1100px) {
+    .scheduleContainer::after {
+        top: -160%;
+        height: 56.25rem;
+    }
+}

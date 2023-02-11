@@ -1,0 +1,30 @@
+{
+    "links":[
+        {
+            "label": "About",
+            "href": "#about",
+            "title": "About us"
+        },
+        {
+            "label": "Theme",
+            "href": "#theme",
+            "title": "Go to Themes"
+        },
+        {
+            "label": "Schedule",
+            "href": "#schedule",
+            "title": "Go to Schedule"
+        },
+        {
+            "label": "Sponsors",
+            "href": "#sponsors",
+            "title": "Go to Sponsors"
+        },
+        {
+            "label": "FAQ",
+            "href": "#faq",
+            "title": "Go to FAQ"
+        }
+    ]
+}
+

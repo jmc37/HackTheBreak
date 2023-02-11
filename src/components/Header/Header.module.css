@@ -1,0 +1,142 @@
+.logoContainer {
+    display: flex;
+    cursor: pointer;
+}
+
+.logo {
+    height: 3.75rem;
+    width: auto;
+}
+
+.burgerContainer {
+    display: relative;
+}
+
+.burgerNav {
+    border: none;
+    height: 1.6875rem;
+    width: 2.1875rem;
+    cursor: pointer;
+    margin-left: auto;
+    position: relative;
+    background-color: var(--white-clear);
+    margin-right: 4.5rem;
+}
+
+.gnExpanded {
+    margin-left: auto;
+    position: absolute;
+    top: 5.75rem;
+    left: -1.5rem;
+    width: 100vw;
+    height: calc(100vh - 7.75rem);
+    background-color: var(--bg-blue);
+    transition: transform top ease-in-out all;
+    transition-duration: 0.3s;
+}
+
+.gnExpanded ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.gnExpanded li {
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 0.125rem solid var(--secondary-blue);
+}
+
+.gn {
+    display: none;
+    position: absolute;
+    top: 4.5em;
+    left: -2em;
+}
+
+.gn ul {
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+.gn a, .gnExpanded a {
+    color: var(--black-color);
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100%;
+    padding: 1.5rem 0;
+}
+
+.bannerBtnContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+}
+
+.bannerBtnClosed {
+    display: none;
+}
+
+.bannerBtns {
+    padding: 0.8125rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.25rem var(--shadow);
+    background-color: var(--secondary-blue);
+    border: 0.1rem solid var(--primary-blue);
+    font-family: 'Fira Code', monospace;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    width: 90%;
+}
+
+.bannerBtns a {
+    color: var(--bg-blue);
+}
+
+@media (min-width: 426px) {
+    .bannerBtnContainer {
+        flex-direction: row;
+        padding: 0 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        padding: 2rem 5rem;
+        height: 4.25rem;
+    }
+
+    .burgerNav {
+        display: none;
+    }
+
+    .gn {
+        display: flex;
+        position: static;
+        height: auto;
+        margin: 0 4.5rem 0 auto;
+    }
+
+    .gn ul {
+        display: flex;
+        gap: 3.75rem;
+    }
+
+    .gn li {
+        display: flex;
+        flex-direction: column;
+        gap: 3.75rem;
+    }
+
+    .gnExpanded {
+        display: none;
+    }
+}

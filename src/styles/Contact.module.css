@@ -1,0 +1,44 @@
+.faqHighlight {
+    font-weight: 600;
+}
+
+.contactForm, .contactCols {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contactForm {
+    margin-top: 3.5rem;
+}
+
+.contactCols {
+    width: 100%;
+}
+
+.sendBtn {
+    color: var(--white-color);
+    font-family: 'Fira Code', monospace;
+    font-size: 1.75rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 0.8125rem 1.875rem;
+    background-color: var(--primary-blue);
+    border: 0.1rem solid var(--secondary-blue);
+    border-radius: 0.5rem;
+    box-shadow: 0px 0.25rem 0.25rem var(--shadow);
+    transition: ease-in-out background-color;
+    transition-duration: 0.35s;
+    cursor: pointer;
+}
+
+@media (min-width: 1100px) {
+    .sendBtn:hover {
+        background-color: var(--secondary-orange);
+    }
+
+    .contactForm {
+        flex-direction: row;
+        padding: 0 10.9375rem;
+    }
+}
