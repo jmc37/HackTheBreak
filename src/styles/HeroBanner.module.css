@@ -81,6 +81,13 @@
         gap: 3.5rem;
     }
 
+    .eventDetails {
+        flex-direction: row;
+        gap: 0;
+        justify-content: space-around;
+        margin-bottom: 3.875rem;
+    }
+
     .countdownValuesBox {
         flex-direction: row;
     }
@@ -93,13 +100,6 @@
 
     .tagline {
         font-size: 2.75rem;
-    }
-
-    .eventDetails {
-        flex-direction: row;
-        gap: 4.625rem;
-        justify-content: space-around;
-        margin-bottom: 3.875rem;
     }
 
     .bannerBtns {
