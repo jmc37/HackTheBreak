@@ -4,13 +4,15 @@
 }
 
 .statContainer {
+    width: 100%;
     display: flex;
+    overflow-x: scroll;
     gap: 1rem;
     margin-bottom: 0.5rem;
 }
 
 .statBoxLight, .statBoxDark {
-    width: 100%;
+    min-width: 225px;
     height: 9.5rem;
     border-radius: 0.5rem;
     box-shadow: 0 0.25rem 0.25rem var(--shadow);
@@ -37,16 +39,12 @@
     text-transform: uppercase;
     line-height: 2.75rem;
     padding: 1rem;
-    margin: 1rem;
+    margin: 1rem auto;
 }
 
 @media (min-width: 768px) {
     .statBoxLight, .statBoxDark {
         display: block;
-    }
-
-    .statBoxLight p, .statBoxDark p {
-        margin: 1rem 0 0;
     }
 }
 
@@ -76,7 +74,7 @@
     }
 
     .statBoxLight, .statBoxDark {
-        width: 47%;
+        min-width: 47%;
         flex-wrap: wrap;
     }
 
