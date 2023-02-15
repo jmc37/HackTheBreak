@@ -13,12 +13,12 @@ function Sponsors() {
                 <h2>Event Sponsors</h2>
                 <div className={styles.sponsorBox}>
                     <img 
-                        className={styles.sponsorLogo}
+                        className={styles.sponsorLogoBCITSA}
                         src={bcitsaLogo}
                         alt='BCIT Student Association Logo'
                     />
                     <img 
-                        className={styles.sponsorLogo}
+                        className={styles.sponsorLogoILM}
                         src={ilmLogo}
                         alt='Industrial Lights and Magic Logo'
                     />
