@@ -30,8 +30,21 @@
     margin: 0;
 }
 
+.countdownValuesBox {
+    background-color: var(--secondary-blue);
+    color: var(--white-color);
+    max-width: 36.125rem;
+    padding: 0.625rem 1rem;
+    font-size: 1.5rem;
+    box-shadow: 0 0.25rem 0.25rem var(--shadow);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
 .countdown p {
-    margin: 0.75rem auto 2.5rem;
+    margin: 0.75rem auto;
 }
 
 .bannerBtnContainer {
@@ -67,6 +80,17 @@
         flex-direction: row;
         gap: 3.5rem;
     }
+
+    .eventDetails {
+        flex-direction: row;
+        gap: 0;
+        justify-content: space-around;
+        margin-bottom: 3.875rem;
+    }
+
+    .countdownValuesBox {
+        flex-direction: row;
+    }
 }
 
 @media (min-width: 768px) {
@@ -76,13 +100,6 @@
 
     .tagline {
         font-size: 2.75rem;
-    }
-
-    .eventDetails {
-        flex-direction: row;
-        gap: 4.625rem;
-        justify-content: space-around;
-        margin-bottom: 3.875rem;
     }
 
     .bannerBtns {
