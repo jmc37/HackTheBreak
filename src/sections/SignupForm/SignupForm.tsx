@@ -20,6 +20,7 @@ type FormData = {
   linkedIn: string;
   goal: string;
   team: string;
+  food: string;
   strengths: string;
 };
 
@@ -37,6 +38,7 @@ const INITIAL_DATA: FormData = {
   linkedIn: "",
   goal: "",
   team: "Team",
+  food: "option1",
   strengths: "",
 };
 
@@ -77,6 +79,7 @@ function SignupForm() {
         linkedIn: data.linkedIn,
         goal: data.goal,
         team: data.team,
+        food: data.food,
         strengths: data.strengths,
       }),
     })
@@ -99,6 +102,7 @@ function SignupForm() {
       linkedIn: data.linkedIn,
       goal: data.goal,
       team: data.team,
+      food: data.food,
       strengths: data.strengths,
     };
     emailjs
