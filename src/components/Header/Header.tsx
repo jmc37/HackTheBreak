@@ -9,27 +9,26 @@ import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
 import { grey } from '@mui/material/colors';
 
 const Header: React.FC<{}> = () => {
+  // Collapsible Burger Menu
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
 
-    // Collapsible Burger Menu
-    const [isNavExpanded, setIsNavExpanded] = useState(false);
+  // Sticky Nav that disappears on scroll down
+  const [position, setPosition] = useState(window.pageYOffset);
+  const [visible, setVisible] = useState(true);
 
-    // Sticky Nav that disappears on scroll down
-    const [position, setPosition] = useState(window.pageYOffset);
-    const [visible, setVisible] = useState(true);
+  useEffect(() => {
+    const handleScroll = () => {
+      let scrolling = window.pageYOffset;
+      setVisible(position > scrolling);
+      setPosition(scrolling);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  });
 
-    useEffect(() => {
-        const handleScroll = () => {
-            let scrolling = window.pageYOffset;
-            setVisible(position > scrolling);
-            setPosition(scrolling);
-        };
-        window.addEventListener("scroll", handleScroll);
-        return(() => {
-            window.removeEventListener("scroll", handleScroll);
-        })
-    })
-
-    const header = visible ? "visible" : "hidden";
+  const header = visible ? "visible" : "hidden";
 
     return (
         <header className={header}>

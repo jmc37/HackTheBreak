@@ -3,6 +3,7 @@ import { FormWrapper } from "./FormWrapper";
 type AccountData = {
   goal: string;
   team: string;
+  food: string;
   strengths: string;
 };
 
@@ -13,6 +14,7 @@ type AccountFormProps = AccountData & {
 export function AccountForm({
   goal,
   team,
+  food,
   strengths,
   updateFields,
 }: AccountFormProps) {
@@ -32,6 +34,16 @@ export function AccountForm({
       >
         <option value="Team">Team</option>
         <option value="Individual">Individual</option>
+      </select>
+      <label>Please select a food option</label>
+      <select
+        value={food}
+        onChange={(e) => updateFields({ food: e.target.value })}
+      >
+        <option value="option1">option1</option>
+        <option value="option2">option2</option>
+        <option value="option3">option3</option>
+        <option value="option4">option4</option>
       </select>
       <label>What are some of your strengths?</label>
       <input
