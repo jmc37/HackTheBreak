@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import styles from './Header.module.css';
-import { links } from './anchorTags.json';
 import MenuSharpIcon from '@mui/icons-material/MenuSharp';
+import HelpIcon from '@mui/icons-material/Help';
+import FormatPaintIcon from '@mui/icons-material/FormatPaint';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import HandshakeIcon from '@mui/icons-material/Handshake';
+import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
+import EmailIcon from '@mui/icons-material/Email';
+
 
 type Link = {
     label: string;
@@ -71,18 +77,51 @@ const Header: React.FC<{}> = () => {
                     isNavExpanded ? styles.gnExpanded : styles.gn
                 }>
                     <ul>
-                        {links.map((link: Link) => {
-                            return (
-                                <li key={link.href}>
-                                    <a
-                                        href={link.href} 
-                                        title={link.title}
-                                    >
-                                        {link.label}
-                                    </a>
-                                </li>
-                            )
-                        })}
+                        <li>
+                            <a
+                                href="#about"
+                                title="Learn About Us"
+                            >
+                                <HelpIcon fontSize="large"></HelpIcon>
+                                <p>About</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#theme"
+                                title="Go to Themes"
+                            >
+                                <FormatPaintIcon fontSize="large"></FormatPaintIcon>
+                                <p>Theme</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#schedule"
+                                title="Go to Schedule"
+                            >
+                                <CalendarMonthIcon fontSize="large"></CalendarMonthIcon>
+                                <p>Schedule</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#sponsors"
+                                title="Go to Sponsors"
+                            >
+                                <HandshakeIcon fontSize="large"></HandshakeIcon>
+                                <p>Sponsors</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#faq"
+                                title="Go to FAQ"
+                            >
+                                <QuestionAnswerIcon fontSize="large"></QuestionAnswerIcon>
+                                <p>FAQ</p>
+                            </a>
+                        </li>
                     </ul>
                     <div className={
                         isNavExpanded ? styles.bannerBtnContainer : styles.bannerBtnClosed
