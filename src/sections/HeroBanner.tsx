@@ -53,7 +53,7 @@ const HeroBanner: React.FC<Props> = () => {
     });
 
     return(
-        <section className={styles.banner} id="welcome">
+        <section className={styles.bannerSection} id="welcome">
             <div className="container">
                 <h1>Hack the Break 2023</h1>
                 <p className={styles.tagline}>A student driven code-fest to ignite <br className="lineBreak" />your brains during reading break!</p>
