@@ -30,7 +30,7 @@
     left: -1.5rem;
     width: 100vw;
     height: calc(100vh - 7.75rem);
-    background-color: var(--bg-blue);
+    background-color: var(--primary-blue);
     transition: transform top ease-in-out all;
     transition-duration: 0.3s;
     padding-bottom: 2rem;
@@ -63,7 +63,7 @@
 }
 
 .gn a, .gnExpanded a {
-    color: var(--black-color);
+    color: var(--white-color);
     font-size: 1rem;
     font-weight: 600;
     width: 100%;
@@ -118,7 +118,7 @@
 }
 
 .bannerBtns a {
-    color: var(--bg-blue);
+    color: var(--white-color);
 }
 
 @media (min-width: 426px) {
