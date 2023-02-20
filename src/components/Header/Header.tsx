@@ -7,7 +7,6 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import HandshakeIcon from '@mui/icons-material/Handshake';
 import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
 import { grey } from '@mui/material/colors';
-import anim from '../../styles/Animations.module.css';
 
 const Header: React.FC<{}> = () => {
 
@@ -35,7 +34,7 @@ const Header: React.FC<{}> = () => {
     return (
         <header className={header}>
             <div className="container header">
-                <a className={`${styles.logoContainer} ${anim.fadeDownAnimation} ${anim.fadeDelay2}`}href="#welcome" title="Return to beginnings">
+                <a className={styles.logoContainer} href="#welcome" title="Return to beginnings">
                     <svg className={styles.logo} version="1.0" xmlns="http://www.w3.org/2000/svg" width="80.000000pt" height="80.000000pt" viewBox="0 0 80.000000 80.000000" preserveAspectRatio="xMidYMid meet">
                             <g transform="translate(0.000000,80.000000) scale(0.100000,-0.100000)"
                             fill="#fff" stroke="none">
@@ -64,13 +63,13 @@ const Header: React.FC<{}> = () => {
                         setIsNavExpanded(!isNavExpanded);
                     }}
                 > 
-                    <MenuSharpIcon fontSize="large" aria-label="hamburger menu" sx={{ color: grey[50] }} className={`${anim.fadeDownAnimation} ${anim.fadeDelay2}`}></MenuSharpIcon>
+                    <MenuSharpIcon fontSize="large" aria-label="hamburger menu" sx={{ color: grey[50] }}></MenuSharpIcon>
                 </button>
                 <nav className={
                     isNavExpanded ? styles.gnExpanded : styles.gn
                 }>
                     <ul>
-                        <li className={`${anim.fadeDownAnimation} ${anim.fadeDelay2}`}>
+                        <li>
                             <a
                                 href="#about"
                                 title="Learn About Us"
@@ -79,7 +78,7 @@ const Header: React.FC<{}> = () => {
                                 <p>About</p>
                             </a>
                         </li>
-                        <li className={`${anim.fadeDownAnimation} ${anim.fadeDelay3}`}>
+                        <li>
                             <a
                                 href="#theme"
                                 title="Go to Themes"
@@ -88,7 +87,7 @@ const Header: React.FC<{}> = () => {
                                 <p>Theme</p>
                             </a>
                         </li>
-                        <li className={`${anim.fadeDownAnimation} ${anim.fadeDelay4}`}>
+                        <li>
                             <a
                                 href="#schedule"
                                 title="Go to Schedule"
@@ -97,7 +96,7 @@ const Header: React.FC<{}> = () => {
                                 <p>Schedule</p>
                             </a>
                         </li>
-                        <li className={`${anim.fadeDownAnimation} ${anim.fadeDelay5}`}>
+                        <li>
                             <a
                                 href="#sponsors"
                                 title="Go to Sponsors"
@@ -106,7 +105,7 @@ const Header: React.FC<{}> = () => {
                                 <p>Sponsors</p>
                             </a>
                         </li>
-                        <li className={`${anim.fadeDownAnimation} ${anim.fadeDelay6}`}>
+                        <li>
                             <a
                                 href="#faq"
                                 title="Go to FAQ"
