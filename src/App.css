@@ -84,7 +84,7 @@ section {
     top: 0;
     left: 0;
     position: fixed;
-    background: var(--white-color);
+    background: var(--secondary-blue);
     padding: 2rem 1.5rem;
     width: 100vw;
     height: 3.75rem;
