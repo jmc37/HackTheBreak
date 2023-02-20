@@ -39,10 +39,6 @@ a {
     text-decoration: none;
 }
 
-main {
-    margin-top: 6rem;
-}
-
 .wrapper {
     overflow-x: hidden;
 }
@@ -94,6 +90,7 @@ section {
 
 .hidden {
     top: 3.75rem;
+    background: var(--secondary-blue);
 }
 
 .header {
