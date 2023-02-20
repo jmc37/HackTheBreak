@@ -52,6 +52,10 @@ main {
     margin: 0 auto;
 }
 
+.section-no-padding {
+    padding: 0;
+}
+
 section {
     padding: 4rem 1.5rem;
 }
