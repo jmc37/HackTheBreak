@@ -40,7 +40,7 @@ a {
 }
 
 main {
-    margin-top: 7.75rem;
+    margin-top: 6rem;
 }
 
 .wrapper {
@@ -50,6 +50,10 @@ main {
 .container {
     max-width: 1120px;
     margin: 0 auto;
+}
+
+.section-no-padding {
+    padding: 0;
 }
 
 section {
@@ -66,6 +70,7 @@ section {
     --secondary-orange: #E47D04;
     --bg-blue: #C0DDFF;
     --shadow:rgba(0, 0, 0, 0.15);
+    --shadow-light:rgba(0, 0, 0, 0.06);
     --grey-color: #EEEEEE;
     --white-clear: #ffffff00;
 }
@@ -79,7 +84,7 @@ section {
     top: 0;
     left: 0;
     position: fixed;
-    background: var(--white-color);
+    background: var(--secondary-blue);
     padding: 2rem 1.5rem;
     width: 100vw;
     height: 3.75rem;
@@ -126,5 +131,9 @@ section {
 
     .headingBreak, .footerParaBreak2 {
         display: none;
+    }
+
+    .visible {
+        padding: 1rem 1.5rem 4rem;
     }
 }
