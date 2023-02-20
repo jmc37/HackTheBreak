@@ -74,7 +74,9 @@ function FAQ() {
               <AccordionDetails>
                 <Typography className={styles.faqText}>
                   This event is open to BCIT students only with a limited number
-                  of positions available.
+                  of positions available. Other post secondary students may join
+                  2 weeks after signup opens provided that atleast half their
+                  teamates are BCIT students.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -110,14 +112,26 @@ function FAQ() {
                 id="panel1a-header"
               >
                 <Typography className={styles.faqText}>
-                  Will food be provided?
+                  What is a hackathon?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography className={styles.faqText}>
-                  Food will be provided on Sunday for the in person portion part
-                  of the hackathon. Participants are given 5 food choices when
-                  signing up.
+                  A hackathon is a collaborative event where individuals,
+                  particularly programmers, designers, and other tech
+                  enthusiasts, come together to create new and innovative
+                  software or hardware projects within a short period of time.
+                  The main objective of a hackathon is to encourage participants
+                  to develop prototypes, products, or solutions that address
+                  real-world problems through innovation, with the added
+                  incentive of potentially winning prizes. During "Hack the
+                  Break," participants will have access to mentors who can
+                  provide guidance and support as they work in teams of up to
+                  five members to develop their final projects. The competition
+                  culminates in the presentation of the completed projects to a
+                  panel of judges made up of BCIT instructors and industry
+                  professionals, who will evaluate the projects and determine
+                  the winning teams.{" "}
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -138,7 +152,8 @@ function FAQ() {
               <AccordionDetails>
                 <Typography className={styles.faqText}>
                   No worries! Hack the Break is open to people of all skill
-                  levels and backgrounds.
+                  levels and backgrounds. Over 40% of last years "Hack the
+                  Break" participants were first time hackers!
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -243,9 +258,9 @@ function FAQ() {
           <p>
             <a
               className={styles.htbEmail}
-              href="mailto:hackthebreak2022@gmail.com"
+              href="mailto:hackthebreakvancouver@gmail.com"
             >
-              hackthebreak2022@gmail.com
+              hackthebreakvancouver@gmail.com
             </a>
           </p>
         </div>
