@@ -21,6 +21,8 @@
     position: relative;
     background-color: var(--white-clear);
     margin-right: 4.5rem;
+    display: flex;
+    align-items: center;
 }
 
 .gnExpanded {
