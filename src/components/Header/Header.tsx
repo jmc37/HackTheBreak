@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import styles from './Header.module.css';
-import { links } from './anchorTags.json';
-
-type Link = {
-    label: string;
-    href: string;
-    title: string;
-};
+import MenuSharpIcon from '@mui/icons-material/MenuSharp';
+import HelpIcon from '@mui/icons-material/Help';
+import FormatPaintIcon from '@mui/icons-material/FormatPaint';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import HandshakeIcon from '@mui/icons-material/Handshake';
+import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
+import { grey } from '@mui/material/colors';
 
 const Header: React.FC<{}> = () => {
 
@@ -36,9 +36,8 @@ const Header: React.FC<{}> = () => {
             <div className="container header">
                 <a className={styles.logoContainer} href="#welcome" title="Return to beginnings">
                     <svg className={styles.logo} version="1.0" xmlns="http://www.w3.org/2000/svg" width="80.000000pt" height="80.000000pt" viewBox="0 0 80.000000 80.000000" preserveAspectRatio="xMidYMid meet">
-
                             <g transform="translate(0.000000,80.000000) scale(0.100000,-0.100000)"
-                            fill="#102d52" stroke="none">
+                            fill="#fff" stroke="none">
                             <path d="M366 755 c-3 -9 -6 -45 -6 -80 0 -66 13 -90 47 -83 16 3 18 14 18 88
                             0 84 0 85 -26 88 -17 2 -29 -3 -33 -13z"/>
                             <path d="M584 629 c-43 -41 -54 -58 -52 -78 5 -44 36 -38 94 20 58 57 66 82
@@ -64,28 +63,57 @@ const Header: React.FC<{}> = () => {
                         setIsNavExpanded(!isNavExpanded);
                     }}
                 > 
-                    <svg width="35" height="27" viewBox="0 0 35 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="35" height="3" rx="1.5" fill="#2B2B2B"/>
-                        <rect y="12" width="35" height="3" rx="1.5" fill="#2B2B2B"/>
-                        <rect y="24" width="35" height="3" rx="1.5" fill="#2B2B2B"/>
-                    </svg>
+                    <MenuSharpIcon fontSize="large" aria-label="hamburger menu" sx={{ color: grey[50] }}></MenuSharpIcon>
                 </button>
                 <nav className={
                     isNavExpanded ? styles.gnExpanded : styles.gn
                 }>
                     <ul>
-                        {links.map((link: Link) => {
-                            return (
-                                <li key={link.href}>
-                                    <a
-                                        href={link.href} 
-                                        title={link.title}
-                                    >
-                                        {link.label}
-                                    </a>
-                                </li>
-                            )
-                        })}
+                        <li>
+                            <a
+                                href="#about"
+                                title="Learn About Us"
+                            >
+                                <HelpIcon fontSize="large" sx={{ color: grey[50] }}></HelpIcon>
+                                <p>About</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#theme"
+                                title="Go to Themes"
+                            >
+                                <FormatPaintIcon fontSize="large" sx={{ color: grey[50] }}></FormatPaintIcon>
+                                <p>Theme</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#schedule"
+                                title="Go to Schedule"
+                            >
+                                <CalendarMonthIcon fontSize="large" sx={{ color: grey[50] }}></CalendarMonthIcon>
+                                <p>Schedule</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#sponsors"
+                                title="Go to Sponsors"
+                            >
+                                <HandshakeIcon fontSize="large" sx={{ color: grey[50] }}></HandshakeIcon>
+                                <p>Sponsors</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#faq"
+                                title="Go to FAQ"
+                            >
+                                <QuestionAnswerIcon fontSize="large" sx={{ color: grey[50] }}></QuestionAnswerIcon>
+                                <p>FAQ</p>
+                            </a>
+                        </li>
                     </ul>
                     <div className={
                         isNavExpanded ? styles.bannerBtnContainer : styles.bannerBtnClosed

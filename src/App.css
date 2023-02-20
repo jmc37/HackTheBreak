@@ -52,6 +52,10 @@ main {
     margin: 0 auto;
 }
 
+.section-no-padding {
+    padding: 0;
+}
+
 section {
     padding: 4rem 1.5rem;
 }
@@ -80,7 +84,7 @@ section {
     top: 0;
     left: 0;
     position: fixed;
-    background: var(--white-color);
+    background: var(--secondary-blue);
     padding: 2rem 1.5rem;
     width: 100vw;
     height: 3.75rem;
@@ -127,5 +131,9 @@ section {
 
     .headingBreak, .footerParaBreak2 {
         display: none;
+    }
+
+    .visible {
+        padding: 1rem 1.5rem 4rem;
     }
 }

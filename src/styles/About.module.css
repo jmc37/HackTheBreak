@@ -70,7 +70,7 @@
         grid-area: stat;
         flex-wrap: wrap;
         align-items: right;
-        gap: 1.478125rem;
+        overflow: hidden;
     }
 
     .statBoxLight, .statBoxDark {

@@ -1,10 +1,11 @@
-.banner {
+.bannerSection {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 6.25rem 1.25rem 5rem;
     text-align: center;
-    background: linear-gradient(180deg, rgba(192, 221, 255, 0.3) 46.35%, rgba(192, 221, 255, 0) 100%);
+    background: url(/src/assets/herobanner_bg.jpg) no-repeat center;
+    background-size: cover;
 }
 
 .tagline {
@@ -44,7 +45,7 @@
 }
 
 .countdown p {
-    margin: 0.75rem auto;
+    margin: 1rem auto;
 }
 
 .bannerBtnContainer {
@@ -76,16 +77,13 @@
 }
 
 @media (min-width: 536px) {
+    .bannerSection {
+        padding: 8.25rem 1.25rem 5rem;
+    }
+
     .bannerBtnContainer {
         flex-direction: row;
         gap: 3.5rem;
-    }
-
-    .eventDetails {
-        flex-direction: row;
-        gap: 0;
-        justify-content: space-around;
-        margin-bottom: 3.875rem;
     }
 
     .countdownValuesBox {
@@ -94,12 +92,19 @@
 }
 
 @media (min-width: 768px) {
-    .banner {
-        padding: 10.5rem 0 5rem;
+    .bannerSection {
+        padding: 10rem 0 5rem;
     }
 
     .tagline {
         font-size: 2.75rem;
+    }
+
+    .eventDetails {
+        flex-direction: row;
+        gap: 0;
+        justify-content: space-around;
+        margin-bottom: 3.875rem;
     }
 
     .bannerBtns {

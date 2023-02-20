@@ -3,7 +3,7 @@ h2 {
 }
 
 .scheduleSection {
-    background-color: var(--bg-blue);
+    background: url(../assets/htb_themed_bg.jpg);
 }
 
 .scheduleContainer {
@@ -52,10 +52,6 @@ h2 {
     padding: 3.125rem 2.75rem;
     box-shadow: 0px 0.25rem 0.25rem var(--shadow);
     z-index: 1;
-}
-
-@media (min-width: 768px) {
-    
 }
 
 @media (min-width: 1024px) {
