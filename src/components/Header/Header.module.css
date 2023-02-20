@@ -33,6 +33,7 @@
     background-color: var(--bg-blue);
     transition: transform top ease-in-out all;
     transition-duration: 0.3s;
+    padding-bottom: 2rem;
 }
 
 .gnExpanded ul {
@@ -44,7 +45,7 @@
 
 .gnExpanded li {
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     border-bottom: 0.125rem solid var(--secondary-blue);
 }
 
@@ -64,7 +65,7 @@
 .gn a, .gnExpanded a {
     color: var(--black-color);
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     width: 100%;
     padding: 1.5rem 0;
     display: flex;
@@ -141,7 +142,7 @@
         display: flex;
         position: static;
         height: auto;
-        margin: 0 3rem 0 auto;
+        margin: 0 4rem 0 auto;
     }
 
     .gn ul {

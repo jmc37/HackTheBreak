@@ -6,14 +6,6 @@ import FormatPaintIcon from '@mui/icons-material/FormatPaint';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import HandshakeIcon from '@mui/icons-material/Handshake';
 import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
-import EmailIcon from '@mui/icons-material/Email';
-
-
-type Link = {
-    label: string;
-    href: string;
-    title: string;
-};
 
 const Header: React.FC<{}> = () => {
 
