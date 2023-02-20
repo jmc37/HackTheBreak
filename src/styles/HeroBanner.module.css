@@ -101,13 +101,6 @@
         font-size: 2.75rem;
     }
 
-    .eventDetails {
-        flex-direction: row;
-        gap: 0;
-        justify-content: space-around;
-        margin-bottom: 3.875rem;
-    }
-
     .bannerBtnRegister, .bannerBtnSponsor {
         font-size: 1.75rem;
     }
@@ -117,5 +110,12 @@
     .bannerBtns:hover {
         background-color: var(--primary-blue);
         color: var(--white-color);
+    }
+
+    .eventDetails {
+        flex-direction: row;
+        gap: 0;
+        justify-content: space-around;
+        margin-bottom: 3.875rem;
     }
 }
