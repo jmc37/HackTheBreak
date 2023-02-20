@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 6.25rem 1.25rem 5rem;
+    padding: 12rem 1.25rem 5rem;
     text-align: center;
     background: url(/src/assets/herobanner_bg.jpg) no-repeat center;
     background-size: cover;
@@ -79,7 +79,7 @@
 
 @media (min-width: 536px) {
     .bannerSection {
-        padding: 8.25rem 1.25rem 5rem;
+        padding: 13rem 1.25rem 5rem;
     }
 
     .bannerBtnContainer {
