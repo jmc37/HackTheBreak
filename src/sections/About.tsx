@@ -32,12 +32,13 @@ function About() {
         </div>
         <div className={styles.writtenContainer}>
           <p>
-            Attention all tech lovers! Prepare to immerse yourself in the most
-            exhilarating hackathon experience of the year! Introducing the BCIT
-            Computing Clubs student-driven code-fest - a hackathon like no
-            other! Our extraordinary event brings together the brightest minds
-            from BCIT and beyond, including the Computing Club, Women in
-            Computing, Coding 4 All, and Part-Time Computing Club.
+            Don't miss out on BCIT's most exhilarating hackathon experience of
+            the year, taking place on March 11-12th 2023. Bringing together the
+            brightest minds from BCIT and beyond, hosted by BCIT Computing Club,
+            Women in Computing, Coding 4 All, and Part-Time Computing Club, this
+            hackathon promises to be unlike any other. Open to all BCIT students
+            and levels of experience. Register by February 24th to secure your
+            spot at this exceptional event!
           </p>
           <p>
             From its inception in 2021, our annual hackathon has been the
