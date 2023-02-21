@@ -81,7 +81,7 @@ section {
     left: 0;
     position: fixed;
     background: var(--secondary-blue);
-    padding: 1.5rem;
+    padding: 2rem;
     width: 100vw;
     height: 3.75rem;
     transition: bottom 5s ease;
@@ -131,6 +131,6 @@ section {
     }
 
     .visible {
-        padding: 1rem 1.5rem 2.5rem;
+        padding: 2rem 1.5rem 3rem;
     }
 }
