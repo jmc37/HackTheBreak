@@ -1,24 +1,17 @@
 import styles from "../styles/HeroBanner.module.css";
 import React, { useEffect, useState } from "react";
 
-type Props = {
-  timerComponents: number;
-  interval: number;
-  timeLeft: number;
-  days: number;
-};
-
-const HeroBanner: React.FC<Props> = () => {
+const HeroBanner: React.FC = () => {
   const calculateTimeLeft = () => {
     const difference = +new Date(`03/11/2023`) - +new Date();
 
-    let timeLeft = [];
+    let timeLeft = {};
 
     if (difference > 0) {
       timeLeft = {
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
+        minutes: Math.floor((difference / (1000 * 60)) % 60),
         seconds: Math.floor((difference / 1000) % 60),
       };
     }
@@ -36,24 +29,16 @@ const HeroBanner: React.FC<Props> = () => {
     return () => clearTimeout(timer);
   });
 
-  const timerComponents:
-    | string
-    | number
-    | boolean
-    | React.ReactElement<any, string | React.JSXElementConstructor<any>>
-    | React.ReactFragment
-    | JSX.Element[]
-    | null
-    | undefined = [];
+  const timerComponents: any[] = [];
 
-  Object.keys(timeLeft).forEach((interval: number) => {
-    if (!timeLeft[interval]) {
+  Object.keys(timeLeft).forEach((interval: string) => {
+    if (!timeLeft[interval as keyof typeof timeLeft]) {
       return;
     }
 
     timerComponents.push(
       <p className={styles.countdownValues}>
-        {timeLeft[interval]} <br /> {interval} <br />
+        {timeLeft[interval as keyof typeof timeLeft]} <br /> {interval} <br />
       </p>
     );
   });

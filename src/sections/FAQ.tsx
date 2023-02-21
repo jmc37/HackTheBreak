@@ -196,7 +196,7 @@ function FAQ() {
               <AccordionDetails>
                 <Typography className={styles.faqText}>
                   Hacker applications will be open Feb 24th 2023, and will close
-                  due on March 9th. We recomend signing up as soon as possible
+                  due on March 11th. We recomend signing up as soon as possible
                   as there are limited spots.
                 </Typography>
               </AccordionDetails>
