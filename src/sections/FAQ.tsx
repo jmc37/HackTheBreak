@@ -74,7 +74,9 @@ function FAQ() {
               <AccordionDetails>
                 <Typography className={styles.faqText}>
                   This event is open to BCIT students only with a limited number
-                  of positions available.
+                  of positions available. Other post secondary students may join
+                  2 weeks after signup opens provided that atleast half their
+                  teamates are BCIT students.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -110,14 +112,26 @@ function FAQ() {
                 id="panel1a-header"
               >
                 <Typography className={styles.faqText}>
-                  Will food be provided?
+                  What is a hackathon?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography className={styles.faqText}>
-                  Food will be provided on Sunday for the in person portion part
-                  of the hackathon. Participants are given 5 food choices when
-                  signing up.
+                  A hackathon is a collaborative event where individuals,
+                  particularly programmers, designers, and other tech
+                  enthusiasts, come together to create new and innovative
+                  software or hardware projects within a short period of time.
+                  The main objective of a hackathon is to encourage participants
+                  to develop prototypes, products, or solutions that address
+                  real-world problems through innovation, with the added
+                  incentive of potentially winning prizes. During "Hack the
+                  Break," participants will have access to mentors who can
+                  provide guidance and support as they work in teams of up to
+                  five members to develop their final projects. The competition
+                  culminates in the presentation of the completed projects to a
+                  panel of judges made up of BCIT instructors and industry
+                  professionals, who will evaluate the projects and determine
+                  the winning teams.{" "}
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -138,7 +152,8 @@ function FAQ() {
               <AccordionDetails>
                 <Typography className={styles.faqText}>
                   No worries! Hack the Break is open to people of all skill
-                  levels and backgrounds.
+                  levels and backgrounds. Over 40% of last years "Hack the
+                  Break" participants were first time hackers!
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -158,9 +173,9 @@ function FAQ() {
               </AccordionSummary>
               <AccordionDetails>
                 <Typography className={styles.faqText}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
+                  Hack the Break will be hosted as a hybrid event so the coding
+                  portion will be conducted online. Thus, there will be no venue
+                  to stay overnight at.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -175,14 +190,14 @@ function FAQ() {
                 id="panel1a-header"
               >
                 <Typography className={styles.faqText}>
-                  Can we cancel after registering?
+                  What is the application deadline?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography className={styles.faqText}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
+                  Hacker applications will open Feb 24th 2023, and will close
+                  due on March 11th. We recomend signing up as soon as possible
+                  as there are limited spots.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -197,14 +212,15 @@ function FAQ() {
                 id="panel1a-header"
               >
                 <Typography className={styles.faqText}>
-                  Frequently Asked Question 7
+                  Can I submit past projects?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography className={styles.faqText}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
+                  No, all projects must be created from scratch. Any projects
+                  found to be worked on previously will be disqualified. If you
+                  have any questions regarding the rules please email:
+                  hackthebreakvancouver@gmail.com
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -219,14 +235,56 @@ function FAQ() {
                 id="panel1a-header"
               >
                 <Typography className={styles.faqText}>
-                  Frequently Asked Question 8
+                  How do I confirm my team?{" "}
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography className={styles.faqText}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
+                  Teams will submit their projects on the Devpost link sent to
+                  their email following their registration. Please make sure
+                  either their email or github id is properly linked to the team
+                  when submitting.
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion
+              className={styles.accordion}
+              expanded={expanded === "panel9"}
+              onChange={handleChange("panel9")}
+            >
+              <AccordionSummary
+                expandIcon={<ArrowDropDownIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography className={styles.faqText}>
+                  How big can my team be?{" "}
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography className={styles.faqText}>
+                  Teams must consist of atleast 4 members with a maximum of 5.
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion
+              className={styles.accordion}
+              expanded={expanded === "panel10"}
+              onChange={handleChange("panel10")}
+            >
+              <AccordionSummary
+                expandIcon={<ArrowDropDownIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <Typography className={styles.faqText}>
+                  Does my whole team have to register?{" "}
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography className={styles.faqText}>
+                  Yes, all members of your team must fill out a registration
+                  form to confirm their spot in "Hack the Break"
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -243,9 +301,9 @@ function FAQ() {
           <p>
             <a
               className={styles.htbEmail}
-              href="mailto:hackthebreak2022@gmail.com"
+              href="mailto:hackthebreakvancouver@gmail.com"
             >
-              hackthebreak2022@gmail.com
+              hackthebreakvancouver@gmail.com
             </a>
           </p>
         </div>

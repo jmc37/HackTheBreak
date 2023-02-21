@@ -5,6 +5,7 @@ import { AddressForm } from "./AddressForm";
 import { UserForm } from "./UserForm";
 import { useMultistepForm } from "./useMultiStepForm";
 import emailjs from "@emailjs/browser";
+import axios from "axios";
 
 //Declare type for form data
 type FormData = {
@@ -60,45 +61,58 @@ function SignupForm() {
     e.preventDefault();
     if (!isLastStep) return next();
     sendemail();
+    excelsheet();
     alert("Form Submitted");
-    fetch("http://localhost:3000/register", {
-      method: "POST",
+  }
+
+  function excelsheet() {
+    var settings = {
+      url: "https://v1.nocodeapi.com/hackthebreak/google_sheets/cQQFnHAJpMCBNhqI?tabId=Sheet1",
+      method: "post",
+      timeout: 0,
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        name: data.name,
-        school: data.school,
-        program: data.program,
-        schoolEmail: data.schoolEmail,
-        studentNumber: data.schoolEmail,
-        term: data.term,
-        firstHack: data.firstHack,
-        source: data.source,
-        github: data.github,
-        linkedIn: data.linkedIn,
-        goal: data.goal,
-        team: data.team,
-        food: data.food,
-        strengths: data.strengths,
-      }),
-    })
-      .then((res) => res.json())
-      .then((body) => {
-        console.log(body);
+      data: JSON.stringify([
+        [
+          data.name,
+          data.school,
+          data.program,
+          data.schoolEmail,
+          data.studentNumber,
+          data.term,
+          data.firstHack,
+          data.source,
+          data.github,
+          data.linkedIn,
+          data.goal,
+          data.team,
+          data.food,
+          data.strengths,
+        ],
+      ]),
+    };
+
+    axios(settings)
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
       });
   }
   //Sends email to student
   function sendemail() {
     var templateParams = {
-      to_name: data.name,
+      name: data.name,
       school: data.school,
       program: data.program,
-      student: data.schoolEmail,
+      schoolEmail: data.schoolEmail,
       studentNumber: data.studentNumber,
       term: data.term,
-      first_hackathon: data.firstHack,
+      firstHack: data.firstHack,
       source: data.source,
+      github: data.github,
       linkedIn: data.linkedIn,
       goal: data.goal,
       team: data.team,
@@ -107,10 +121,10 @@ function SignupForm() {
     };
     emailjs
       .send(
-        "service_zq7fyvp",
-        "template_89sjcxy",
+        "service_hrmcax9",
+        "template_lhuq7ei",
         templateParams,
-        "Yr97hAnJ13jcEI4fH"
+        "SGkaoZF5tnIMiPpLD"
       )
       .then(
         function (response) {

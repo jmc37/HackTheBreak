@@ -2,58 +2,48 @@ import styles from "../styles/HeroBanner.module.css";
 import React, { useEffect, useState } from "react";
 import anim from "../styles/Animations.module.css";
 
-type Props = {
-    timerComponents: number;
-    interval: number;
-    timeLeft: number;
-    days: number;
-};
+const HeroBanner: React.FC = () => {
+  const calculateTimeLeft = () => {
+    const difference = +new Date(`03/11/2023`) - +new Date();
 
-const HeroBanner: React.FC<Props> = () => {
+    let timeLeft = {};
 
-    const calculateTimeLeft = () => {
-        const difference = +new Date(`03/11/2023`) - +new Date();
-
-        let timeLeft = [];
-
-        if (difference > 0 ) {
-            timeLeft = {
-                days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-                hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-                minutes: Math.floor((difference / 1000 / 60) % 60),
-                seconds: Math.floor((difference / 1000) % 60)
-            }
-        } 
-
-        return timeLeft;
+    if (difference > 0) {
+      timeLeft = {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / (1000 * 60)) % 60),
+        seconds: Math.floor((difference / 1000) % 60),
+      };
     }
 
-    const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+    return timeLeft;
+  };
 
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setTimeLeft(calculateTimeLeft());
-        }, 1000);
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
-        return () => clearTimeout(timer);
-    });
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
 
-    const timerComponents: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | JSX.Element[] | null | undefined = [];
+    return () => clearTimeout(timer);
+  });
 
-    Object.keys(timeLeft).forEach((interval: number) => {
+  const timerComponents: any[] = [];
 
-        if (!timeLeft[interval]) {
-            return;
-        }
+  Object.keys(timeLeft).forEach((interval: string) => {
+    if (!timeLeft[interval as keyof typeof timeLeft]) {
+      return;
+    }
+    timerComponents.push(
+      <p className={styles.countdownValues}>
+        {timeLeft[interval as keyof typeof timeLeft]} <br /> {interval} <br />
+      </p>
+    );
+  });
 
-        timerComponents.push(
-            <p className={styles.countdownValues}>
-                {timeLeft[interval]} <br/> {interval}{" "} <br/>
-            </p>
-        );
-    });
-
-    return(
+  return(
         <section className={styles.bannerSection} id="welcome">
             <div className="container">
                 <h1 className={anim.fadeRightAnimation}>Hack the Break 2023</h1>
@@ -74,7 +64,7 @@ const HeroBanner: React.FC<Props> = () => {
                 </div>
             </div>
         </section>
-    );
-}
+  );
+};
 
 export default HeroBanner;
