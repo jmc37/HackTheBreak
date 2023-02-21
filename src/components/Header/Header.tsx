@@ -64,7 +64,7 @@ const Header: React.FC<{}> = () => {
                         setIsNavExpanded(!isNavExpanded);
                     }}
                 > 
-                    <MenuSharpIcon fontSize="large" aria-label="hamburger menu" sx={{ color: grey[50] }}></MenuSharpIcon>
+                    <MenuSharpIcon fontSize="large" aria-label="hamburger menu" sx={{ color: grey[50] }} className={`${anim.fadeDownAnimation} ${anim.fadeDelay1}`}></MenuSharpIcon>
                 </button>
                 <nav className={
                     isNavExpanded ? styles.gnExpanded : styles.gn

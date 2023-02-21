@@ -39,6 +39,10 @@
     animation-delay: 0.65s;
 }
 
+.fadeDelay7 {
+    animation-delay: 0.75s;
+}
+
 @keyframes fadeDownAnimation {
     0% {
         opacity: 0;
@@ -53,7 +57,7 @@
 @keyframes fadeRightAnimation {
     0% {
         opacity: 0;
-        transform: translateX(-120px);
+        transform: translateX(-300px);
     }
     100% {
         opacity: 1;
