@@ -37,4 +37,8 @@
         margin: 2rem 0 0;
         flex-wrap: nowrap;
     }
+
+    .socialsSection {
+        padding: 6.25rem 5rem 3.5rem;
+    }
 }

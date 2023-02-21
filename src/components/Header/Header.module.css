@@ -21,6 +21,8 @@
     position: relative;
     background-color: var(--white-clear);
     margin-right: 4.5rem;
+    display: flex;
+    align-items: center;
 }
 
 .gnExpanded {
@@ -67,7 +69,7 @@
     font-size: 1rem;
     font-weight: 600;
     width: 100%;
-    padding: 1.5rem 0;
+    padding: 0.5rem 0;
     display: flex;
     align-items: center;
 }
@@ -106,7 +108,7 @@
     padding: 0.8125rem;
     border-radius: 0.5rem;
     box-shadow: 0 0.25rem 0.25rem var(--shadow);
-    background-color: var(--secondary-blue);
+    background-color: var(--white-color);
     border: 0.1rem solid var(--primary-blue);
     font-family: 'Fira Code', monospace;
     font-size: 1.25rem;
@@ -118,7 +120,7 @@
 }
 
 .bannerBtns a {
-    color: var(--white-color);
+    color: var(--secondary-blue);
 }
 
 @media (min-width: 426px) {

@@ -1,0 +1,66 @@
+.fadeDownAnimation {
+    animation: fadeDownAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    -o-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+}
+
+.fadeRightAnimation {
+    animation: fadeRightAnimation ease 1s;
+    animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+}
+
+.fadeDelay1 {
+    animation-delay: 0.15s;
+}
+
+.fadeDelay2 {
+    animation-delay: 0.25s;
+}
+
+.fadeDelay3 {
+    animation-delay: 0.35s;
+}
+
+.fadeDelay4 {
+    animation-delay: 0.45s;
+}
+
+.fadeDelay5 {
+    animation-delay: 0.55s;
+}
+
+.fadeDelay6 {
+    animation-delay: 0.65s;
+}
+
+.fadeDelay7 {
+    animation-delay: 0.75s;
+}
+
+@keyframes fadeDownAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-120px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeRightAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
