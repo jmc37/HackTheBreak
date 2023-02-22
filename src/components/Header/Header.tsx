@@ -33,9 +33,9 @@ const Header: React.FC<{}> = () => {
 
     return (
         <header className={header}>
-            <div className="container header">
+            <div className="container headerBar">
                 <a className={styles.logoContainer} href="#welcome" title="Return to beginnings">
-                    <svg className={`${styles.logo} ${anim.fadeDownAnimation}`} version="1.0" xmlns="http://www.w3.org/2000/svg" width="80.000000pt" height="80.000000pt" viewBox="0 0 80.000000 80.000000" preserveAspectRatio="xMidYMid meet">
+                    <svg className={styles.logo} version="1.0" xmlns="http://www.w3.org/2000/svg" width="80.000000pt" height="80.000000pt" viewBox="0 0 80.000000 80.000000" preserveAspectRatio="xMidYMid meet">
                             <g transform="translate(0.000000,80.000000) scale(0.100000,-0.100000)"
                             fill="#fff" stroke="none">
                             <path d="M366 755 c-3 -9 -6 -45 -6 -80 0 -66 13 -90 47 -83 16 3 18 14 18 88
@@ -63,13 +63,13 @@ const Header: React.FC<{}> = () => {
                         setIsNavExpanded(!isNavExpanded);
                     }}
                 > 
-                    <MenuSharpIcon fontSize="large" aria-label="hamburger menu" sx={{ color: grey[50] }} className={`${anim.fadeDownAnimation} ${anim.fadeDelay1}`}></MenuSharpIcon>
+                    <MenuSharpIcon fontSize="large" aria-label="hamburger menu" sx={{ color: grey[50] }}></MenuSharpIcon>
                 </button>
                 <nav className={
                     isNavExpanded ? styles.gnExpanded : styles.gn
                 }>
                     <ul>
-                        <li className={`${anim.fadeDownAnimation} ${anim.fadeDelay1}`}>
+                        <li>
                             <a
                                 href="#about"
                                 title="Learn About Us"
@@ -78,7 +78,7 @@ const Header: React.FC<{}> = () => {
                                 <p>About</p>
                             </a>
                         </li>
-                        <li className={`${anim.fadeDownAnimation} ${anim.fadeDelay2}`}>
+                        <li>
                             <a
                                 href="#theme"
                                 title="Go to Themes"
@@ -87,7 +87,7 @@ const Header: React.FC<{}> = () => {
                                 <p>Theme</p>
                             </a>
                         </li>
-                        <li className={`${anim.fadeDownAnimation} ${anim.fadeDelay3}`}>
+                        <li>
                             <a
                                 href="#schedule"
                                 title="Go to Schedule"
@@ -96,7 +96,7 @@ const Header: React.FC<{}> = () => {
                                 <p>Schedule</p>
                             </a>
                         </li>
-                        <li className={`${anim.fadeDownAnimation} ${anim.fadeDelay4}`}>
+                        <li>
                             <a
                                 href="#sponsors"
                                 title="Go to Sponsors"
@@ -105,7 +105,7 @@ const Header: React.FC<{}> = () => {
                                 <p>Sponsors</p>
                             </a>
                         </li>
-                        <li className={`${anim.fadeDownAnimation} ${anim.fadeDelay5}`}>
+                        <li>
                             <a
                                 href="#faq"
                                 title="Go to FAQ"
