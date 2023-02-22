@@ -32,14 +32,13 @@ function About() {
         </div>
         <div className={styles.writtenContainer}>
           <p>
-            Join BCIT's hackathon on March 11-12, 2023, hosted by BCIT Computing
-            Club, Women in Computing, Coding 4 All, and Part-Time Computing
-            Club. This event is open to all BCIT students with any level of
-            experience. Register by March 11th to secure your spot in this
-            exceptional hackathon, which promises an electrifying lineup of
-            challenges, mentorship opportunities, and networking sessions.
-            Unleash your coding skills in the ultimate hackathon experience and
-            push the boundaries of innovation!
+            BCIT Hack the Break 2023 is open to all BCIT students with any level of coding experience.
+          </p>
+          <p>
+            Hack the Break aims to further develop our attendees' coding skills and empower emerging professionals into tech roles.
+          </p>
+          <p>
+            <span className="bolded">Register by March 11th</span> to secure your spot and get ready for electrifying challenges, mentorship opportunities, and networking sessions!
           </p>
         </div>
       </div>

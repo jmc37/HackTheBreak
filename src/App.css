@@ -15,7 +15,7 @@ h1 {
     color: var(--primary-blue);
     -webkit-text-stroke-width: 0.125rem;
     -webkit-text-stroke-color: var(--secondary-blue);
-    margin: 0 0 1.1875rem;
+    margin: 3rem 0 1.1875rem;
 }
 
 h2 {
@@ -41,6 +41,10 @@ a {
 
 .wrapper {
     overflow-x: hidden;
+}
+
+.bolded {
+    font-weight: 700;
 }
 
 .container {
@@ -84,16 +88,18 @@ section {
     padding: 2rem;
     width: 100vw;
     height: 3.75rem;
-    transition: bottom 5s ease;
+    transition: transform 2s ease-in-out;
     z-index: 3;
 }
 
 .hidden {
     top: 3.75rem;
+    padding: 2rem;
     background: var(--secondary-blue);
+    z-index: 3;
 }
 
-.header {
+.headerBar {
     display: flex;
     align-items: center;
     position: relative;

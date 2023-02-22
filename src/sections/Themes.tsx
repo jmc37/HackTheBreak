@@ -8,16 +8,10 @@ function Themes() {
         <div className={styles.writtenContainer}>
           <h2>This Year's Theme: Job Security</h2>
           <p>
-            The pandemic has had a significant impact on the tech industry, with
-            many companies struggling to maintain their workforce. As a result,
-            numerous individuals in tech are feeling anxious about the stability
-            of their jobs or are being forced to seek new opportunities with
-            little notice. In response, the theme for this year's "Hack the
-            Break" is focused on addressing these challenges and providing
-            solutions that offer improved employment prospects and a greater
-            sense of job security. Our goal is to support those affected by
-            these difficult times and empower them to achieve their professional
-            goals.
+            Anxious about securing a job? We feel that, too. Hack the Break 2023 focuses on addressing the challenging job market and fluctuating workforce since the pandemic.
+          </p>
+          <p>
+            Build your resumé with an eye-opening hackathon project when you unleash your coding skills at Hack the Break from March 11-12, 2023.
           </p>
           <button className={styles.themeBtn}>
             <a
