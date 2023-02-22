@@ -6,6 +6,7 @@
 .logo {
     height: 3.75rem;
     width: auto;
+    padding-left: 1rem;
 }
 
 .burgerContainer {
@@ -17,80 +18,11 @@
     height: 1.6875rem;
     width: 2.1875rem;
     cursor: pointer;
-    margin-left: auto;
     position: relative;
     background-color: var(--white-clear);
-    margin-right: 0.5rem;
     display: flex;
     align-items: center;
-}
-
-.gnExpanded {
-    margin-left: auto;
-    position: absolute;
-    top: 5.75rem;
-    left: -2rem;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    background-color: var(--primary-blue);
-    transition: transform top ease-in-out all;
-    transition-duration: 0.3s;
-    padding-bottom: 2rem;
-    z-index: 3;
-}
-
-.gnExpanded ul {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-}
-
-.gnExpanded li {
-    text-align: center;
-    padding: 1rem;
-    border-bottom: 0.125rem solid var(--secondary-blue);
-}
-
-.gn {
-    display: none;
-    position: absolute;
-    top: 4.5em;
-    left: -2em;
-}
-
-.gn ul {
-    display: none;
-    padding: 0;
-    margin: 0;
-}
-
-.gn a, .gnExpanded a {
-    color: var(--white-color);
-    font-size: 1rem;
-    font-weight: 600;
-    width: 100%;
-    padding: 0.5rem 0;
-    display: flex;
-    align-items: center;
-}
-
-.gnExpanded a {
-    flex-direction: row;
-    justify-content: center;
-}
-
-.gn a {
-    flex-direction: column;
-}
-
-.gn a p {
-    margin: 0.5rem 0 0.25rem;
-}
-
-.gnExpanded a p {
-    padding: 0.5rem 0 0.25rem 0.75rem;
+    padding-right: 3rem;
 }
 
 .bannerBtnContainer {
@@ -99,11 +31,7 @@
     align-items: center;
     justify-content: center;
     gap: 0.75rem;
-    margin-top: 1.25rem;
-}
-
-.bannerBtnClosed {
-    display: none;
+    margin: 1.25rem 0;
 }
 
 .bannerBtns {
@@ -116,19 +44,87 @@
     font-size: 1.25rem;
     font-weight: 500;
     text-transform: uppercase;
-    text-decoration: none;
     cursor: pointer;
-    width: 90%;
+    width: 200px;
+    display: flex;
+    justify-content: center;
 }
 
 .bannerBtns a {
     color: var(--secondary-blue);
+    margin: 0;
+}
+
+.mobileTopIcons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+
+
+.mobileMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 0.125rem solid var(--bg-blue);
+    gap: 1rem;
+}
+
+.mobileMenu ul {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobileMenu li, .desktopMenu li {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.mobileMenu a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.mobileMenu .bannerBtnContainer .bannerBtns a {
+    text-align: center;
+}
+
+.mobileMenu a:active {
+    color: var(--secondary-orange);
+}
+
+.desktopMenu ul {
+    gap: 2rem;
+    padding: 0 2rem 0 0;
+}
+
+.desktopMenu a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobileMenu p, .desktopMenu p {
+    color: var(--white-color);
+    margin: 0.5rem 0 0;
+}
+
+.desktopMenu {
+    display: none;
 }
 
 @media (min-width: 426px) {
     .bannerBtnContainer {
         flex-direction: row;
-        padding: 0 3rem;
+        padding: 0 2rem;
     }
 }
 
@@ -142,25 +138,16 @@
         display: none;
     }
 
-    .gn {
-        display: flex;
-        position: static;
-        height: auto;
-        margin: 0 1rem 0 auto;
-    }
-
-    .gn ul {
-        display: flex;
-        gap: 3.75rem;
-    }
-
-    .gn li {
-        display: flex;
-        flex-direction: column;
-        gap: 3.75rem;
-    }
-
-    .gnExpanded {
+    .mobileMenu {
         display: none;
+    }
+
+    .desktopMenu {
+        display: flex;
+    }
+
+    .desktopMenu ul {
+        display: flex;
+
     }
 }
