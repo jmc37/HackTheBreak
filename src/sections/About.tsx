@@ -38,7 +38,7 @@ function About() {
             Hack the Break aims to further develop our attendees' coding skills and empower emerging professionals into tech roles.
           </p>
           <p>
-            Register by March 11th to secure your spot in BCIT's exceptional hackathon. Get ready for electrifying lineup of challenges, mentorship opportunities, and networking sessions.
+            <span className="bolded">Register by March 11th</span> to secure your spot and get ready for electrifying challenges, mentorship opportunities, and networking sessions!
           </p>
         </div>
       </div>
