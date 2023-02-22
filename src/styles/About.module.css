@@ -55,26 +55,27 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
         grid-template-areas: 
-        "header stat"
-        "text stat";
+        "header stat1"
+        "text stat2";
     }
 
     .aboutHeader {
         grid-area: header;
         display: flex;
         align-self: flex-end;
-        margin: 10.625rem 0 0;
+        margin: 7rem 0 0;
     }
 
     .statContainer {
-        grid-area: stat;
         flex-wrap: wrap;
-        align-items: right;
         overflow: hidden;
+        align-items: flex-end;
+        grid-row-start: stat1;
+        grid-row-end: stat2;
     }
 
     .statBoxLight, .statBoxDark {
-        min-width: 47%;
+        min-width: 48%;
         flex-wrap: wrap;
     }
 
