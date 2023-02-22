@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 12rem 1.25rem 5rem;
+    padding: 8rem 1.25rem 5rem;
     text-align: center;
     background: url(/src/assets/herobanner_bg.jpg) no-repeat center;
     background-size: cover;
@@ -78,10 +78,6 @@
 }
 
 @media (min-width: 536px) {
-    .bannerSection {
-        padding: 13rem 1.25rem 5rem;
-    }
-
     .bannerBtnContainer {
         flex-direction: row;
         gap: 3.5rem;
@@ -94,7 +90,7 @@
 
 @media (min-width: 768px) {
     .bannerSection {
-        padding: 15rem 0 5rem;
+        padding: 10rem 0 5rem;
     }
 
     .tagline {

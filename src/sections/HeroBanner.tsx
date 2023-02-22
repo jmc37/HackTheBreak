@@ -50,7 +50,7 @@ const HeroBanner: React.FC = () => {
                 <p className={`${styles.tagline} ${anim.fadeRightAnimation} ${anim.fadeDelay1}`}>A student driven code-fest to ignite <br className="lineBreak" />your brains during reading break!</p>
                 <div className={styles.eventDetails}>
                     <p className={`${anim.fadeRightAnimation} ${anim.fadeDelay2}`}>March 11-12th</p>
-                    <p className={`${anim.fadeRightAnimation} ${anim.fadeDelay3}`}>"Hybrid Event"</p>
+                    <p className={`${anim.fadeRightAnimation} ${anim.fadeDelay3}`}>Online Event</p>
                 </div>
                 <div className={styles.countdown}>
                     <div className={`${styles.countdownValuesBox} ${anim.fadeRightAnimation} ${anim.fadeDelay4}`}>
