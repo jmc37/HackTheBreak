@@ -59,7 +59,7 @@ function SignupForm() {
 
   //Check the current date
   const currentDate = new Date();
-  const showForm = currentDate < new Date("2023-3-11");
+  const showForm = currentDate < new Date("2023-2-11");
 
   //Sends info to database
   function onSubmit(e: FormEvent) {
@@ -172,7 +172,7 @@ function SignupForm() {
         </div>
       ) : (
         <div className={styles.registrationEnd}>
-          <p>Registration is closed. Please come back next year.</p>
+          <p>Registration opens Feb 25th, 2023.</p>
         </div>
       )}
     </section>
