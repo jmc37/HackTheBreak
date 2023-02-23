@@ -13,7 +13,7 @@ function Socials() {
                 <ul className={styles.socialsContainer}>
                     <li>
                         <a
-                            href="https://www.linkedin.com/company/bcit-computing-club/"
+                            href="https://linktr.ee/computing_club"
                             target="_blank"
                             title="Link to Computing Club"
                         >
