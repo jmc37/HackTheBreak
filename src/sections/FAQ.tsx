@@ -73,10 +73,10 @@ function FAQ() {
               </AccordionSummary>
               <AccordionDetails>
                 <Typography className={styles.faqText}>
-                  This event is open to BCIT students only with a limited number
-                  of positions available. Other post secondary students may join
-                  2 weeks after signup opens provided that atleast half their
-                  teamates are BCIT students.
+                  This event is open to Post-Secondary students with a limited
+                  number of spots available. Participants must be currently
+                  enrolled in a post-secondary school and provide email/student
+                  number to confirm enrollment.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -173,9 +173,8 @@ function FAQ() {
               </AccordionSummary>
               <AccordionDetails>
                 <Typography className={styles.faqText}>
-                  Hack the Break will be hosted as a hybrid event so the coding
-                  portion will be conducted online. Thus, there will be no venue
-                  to stay overnight at.
+                  Hack the Break will be hosted online so no venue will be
+                  provided. Thus, there will be no venue to stay overnight at.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -195,9 +194,9 @@ function FAQ() {
               </AccordionSummary>
               <AccordionDetails>
                 <Typography className={styles.faqText}>
-                  Hacker applications will open Feb 24th 2023, and will close
-                  due on March 11th. We recomend signing up as soon as possible
-                  as there are limited spots.
+                  Hacker applications will open Feb 23th 2023, and will close
+                  March 10th. We recomend signing up as soon as possible as
+                  there are limited spots.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -242,8 +241,8 @@ function FAQ() {
                 <Typography className={styles.faqText}>
                   Teams will submit their projects on the Devpost link sent to
                   their email following their registration. Please make sure
-                  either their email or github id is properly linked to the team
-                  when submitting.
+                  either their school email or github id is properly linked to
+                  the team when submitting.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -263,7 +262,8 @@ function FAQ() {
               </AccordionSummary>
               <AccordionDetails>
                 <Typography className={styles.faqText}>
-                  Teams must consist of atleast 4 members with a maximum of 5.
+                  Teams can conist of 1 member up to 5. We strongly suggest
+                  people team up to even out the workload between participants.
                 </Typography>
               </AccordionDetails>
             </Accordion>

@@ -43,27 +43,52 @@ const HeroBanner: React.FC = () => {
     );
   });
 
-  return(
-        <section className={styles.bannerSection} id="welcome">
-            <div className="container">
-                <h1 className={anim.fadeRightAnimation}>Hack the Break 2023</h1>
-                <p className={`${styles.tagline} ${anim.fadeRightAnimation} ${anim.fadeDelay1}`}>A student driven code-fest to ignite <br className="lineBreak" />your brains during reading break!</p>
-                <div className={styles.eventDetails}>
-                    <p className={`${anim.fadeRightAnimation} ${anim.fadeDelay2}`}>March 11-12th</p>
-                    <p className={`${anim.fadeRightAnimation} ${anim.fadeDelay3}`}>Online Event</p>
-                </div>
-                <div className={styles.countdown}>
-                    <div className={`${styles.countdownValuesBox} ${anim.fadeRightAnimation} ${anim.fadeDelay4}`}>
-                        {timerComponents.length ? timerComponents : <span>Time's up!</span>}
-                    </div>
-                    <p className={`${anim.fadeRightAnimation} ${anim.fadeDelay5}`}>Until Registration Closes</p>
-                </div>
-                <div className={styles.bannerBtnContainer}>
-                    <button className={`${styles.bannerBtns} ${anim.fadeRightAnimation} ${anim.fadeDelay6}`}><a href="#signupform" title="Link to Register">Register now</a></button>
-                    <button className={`${styles.bannerBtns} ${anim.fadeRightAnimation} ${anim.fadeDelay7}`}><a href="#about" title="Link to Sponsor us">Sponsor us</a></button>
-                </div>
-            </div>
-        </section>
+  return (
+    <section className={styles.bannerSection} id="welcome">
+      <div className="container">
+        <h1 className={anim.fadeRightAnimation}>Hack the Break 2023</h1>
+        <p
+          className={`${styles.tagline} ${anim.fadeRightAnimation} ${anim.fadeDelay1}`}
+        >
+          A student driven code-fest to ignite <br className="lineBreak" />
+          your brains during reading break!
+        </p>
+        <div className={styles.eventDetails}>
+          <p className={`${anim.fadeRightAnimation} ${anim.fadeDelay2}`}>
+            March 11-12th
+          </p>
+          <p className={`${anim.fadeRightAnimation} ${anim.fadeDelay3}`}>
+            Online Event
+          </p>
+        </div>
+        <div className={styles.countdown}>
+          <div
+            className={`${styles.countdownValuesBox} ${anim.fadeRightAnimation} ${anim.fadeDelay4}`}
+          >
+            {timerComponents.length ? timerComponents : <span>Time's up!</span>}
+          </div>
+          <p className={`${anim.fadeRightAnimation} ${anim.fadeDelay5}`}>
+            Until Registration Closes
+          </p>
+        </div>
+        <div className={styles.bannerBtnContainer}>
+          <button
+            className={`${styles.bannerBtns} ${anim.fadeRightAnimation} ${anim.fadeDelay6}`}
+          >
+            <a href="#signupform" title="Link to Register">
+              Register now
+            </a>
+          </button>
+          <button
+            className={`${styles.bannerBtns} ${anim.fadeRightAnimation} ${anim.fadeDelay7}`}
+          >
+            <a href="#faq" title="Link to Sponsor us">
+              Sponsor us
+            </a>
+          </button>
+        </div>
+      </div>
+    </section>
   );
 };
 

@@ -21,7 +21,7 @@ function About() {
           </div>
           <div className={styles.statBoxDark}>
             <p>
-              $5000+ <br /> Prizes
+              tba <br /> Prizes
             </p>
           </div>
           <div className={styles.statBoxDark}>
@@ -32,13 +32,17 @@ function About() {
         </div>
         <div className={styles.writtenContainer}>
           <p>
-            BCIT Hack the Break 2023 is open to all BCIT students with any level of coding experience.
+            BCIT Hack the Break 2023 is open to all BCIT students with any level
+            of coding experience.
           </p>
           <p>
-            Hack the Break aims to further develop our attendees' coding skills and empower emerging professionals into tech roles.
+            Hack the Break aims to further develop our attendees' coding skills
+            and empower emerging professionals into tech roles.
           </p>
           <p>
-            <span className="bolded">Register by March 11th</span> to secure your spot and get ready for electrifying challenges, mentorship opportunities, and networking sessions!
+            <span className="bolded">Register by March 11th</span> to secure
+            your spot and get ready for electrifying challenges, mentorship
+            opportunities, and networking sessions!
           </p>
         </div>
       </div>

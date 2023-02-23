@@ -35,15 +35,16 @@ export function AccountForm({
         <option value="Team">Team</option>
         <option value="Individual">Individual</option>
       </select>
-      <label>Please select a food option</label>
+      <label>What is your gender?</label>
       <select
         value={food}
         onChange={(e) => updateFields({ food: e.target.value })}
       >
-        <option value="option1">option1</option>
-        <option value="option2">option2</option>
-        <option value="option3">option3</option>
-        <option value="option4">option4</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Non-binary">Non-binary</option>
+        <option value="Other">Other</option>
+        <option value="Prefer Not to Say">Prefer Not to Say</option>
       </select>
       <label>What are some of your strengths?</label>
       <input

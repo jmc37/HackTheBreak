@@ -21,7 +21,7 @@ type FormData = {
   linkedIn: string;
   goal: string;
   team: string;
-  food: string;
+  gender: string;
   strengths: string;
 };
 
@@ -39,7 +39,7 @@ const INITIAL_DATA: FormData = {
   linkedIn: "",
   goal: "",
   team: "Team",
-  food: "option1",
+  gender: "Male",
   strengths: "",
 };
 
@@ -87,7 +87,7 @@ function SignupForm() {
           data.linkedIn,
           data.goal,
           data.team,
-          data.food,
+          data.gender,
           data.strengths,
         ],
       ]),
@@ -101,6 +101,7 @@ function SignupForm() {
         console.log(error);
       });
   }
+
   //Sends email to student
   function sendemail() {
     var templateParams = {
@@ -116,7 +117,7 @@ function SignupForm() {
       linkedIn: data.linkedIn,
       goal: data.goal,
       team: data.team,
-      food: data.food,
+      gender: data.gender,
       strengths: data.strengths,
     };
     emailjs
