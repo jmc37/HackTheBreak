@@ -9,11 +9,11 @@ function Schedule() {
           <p className={styles.hackDay}>Day 1</p>
           <div className={styles.activityContainer}>
             <div className={styles.activityBox}>
-              <p className={styles.activityTime}>08:30</p>
+              <p className={styles.activityTime}>09:00</p>
               <p className={styles.activityName}>Opening Ceremony</p>
             </div>
             <div className={styles.activityBox}>
-              <p className={styles.activityTime}>09:00</p>
+              <p className={styles.activityTime}>09:30</p>
               <p className={styles.activityName}>Hacking begins</p>
             </div>
             <div className={styles.activityBox}>
