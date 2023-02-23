@@ -33,7 +33,7 @@ function Sponsors() {
         <button className={styles.sponsorBtn}>
           <a
             className={styles.devpostLink}
-            href="https://hack-the-break-2022.devpost.com/"
+            href="https://hack-the-break-2023.devpost.com/?preview_token=xv4Hin%2Bqb5evDNjBNiMqTIR7BvKqh7xZt6rLEke49Co%3D"
             target={"_blank"}
             title="Link to BCIT Hack the Break Devpost"
           >
