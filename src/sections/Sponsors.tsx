@@ -18,13 +18,13 @@ function Sponsors() {
           />
           <img
             className={styles.sponsorLogo}
-            src={sapLogo}
-            alt="SAP Software Solutions Logo"
+            src={mastercardLogo}
+            alt="Mastercard Logo"
           />
           <img
             className={styles.sponsorLogo}
-            src={mastercardLogo}
-            alt="Mastercard Logo"
+            src={sapLogo}
+            alt="SAP Software Solutions Logo"
           />
         </div>
         <div className={styles.sponsorBox}>
