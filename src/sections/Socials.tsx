@@ -12,7 +12,7 @@ function Socials() {
                 <ul className={styles.socialsContainer}>
                     <li>
                         <a
-                            href="#"
+                            href="https://www.linkedin.com/company/bcit-computing-club/"
                             target="_blank"
                             title="Link to Computing Club"
                         >
@@ -21,7 +21,7 @@ function Socials() {
                     </li>
                     <li>
                         <a
-                            href="#"
+                            href="https://linktr.ee/wic.bcit"
                             target="_blank"
                             title="Link to BCIT Women in Computing"
                         >
