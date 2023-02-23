@@ -21,14 +21,14 @@ function Sponsors() {
             src={sapLogo}
             alt="SAP Software Solutions Logo"
           />
-          <img
+          {/* <img
             className={styles.sponsorLogo}
             src={mastercardLogo}
-            alt="SAP Software Solutions Logo"
-          />
+            alt="Mastercard Logo"
+          /> */}
         </div>
         <div className={styles.sponsorBox}>
-          <img className={styles.sponsorLogo} src={eaLogo} alt="EA Logo" />
+          {/* <img className={styles.sponsorLogo} src={eaLogo} alt="EA Logo" /> */}
         </div>
         <button className={styles.sponsorBtn}>
           <a

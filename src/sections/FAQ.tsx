@@ -194,8 +194,8 @@ function FAQ() {
               </AccordionSummary>
               <AccordionDetails>
                 <Typography className={styles.faqText}>
-                  Hacker applications will open Feb 23th 2023, and will close
-                  March 10th. We recomend signing up as soon as possible as
+                  Hacker applications will open Feb 23rd 2023, and will close
+                  March 10th 2023. We recomend signing up as soon as possible as
                   there are limited spots.
                 </Typography>
               </AccordionDetails>
@@ -241,7 +241,7 @@ function FAQ() {
                 <Typography className={styles.faqText}>
                   Teams will submit their projects on the Devpost link sent to
                   their email following their registration. Please make sure
-                  either their school email or github id is properly linked to
+                  either your school email or github id is properly linked to
                   the team when submitting.
                 </Typography>
               </AccordionDetails>
@@ -262,7 +262,7 @@ function FAQ() {
               </AccordionSummary>
               <AccordionDetails>
                 <Typography className={styles.faqText}>
-                  Teams can conist of 1 member up to 5. We strongly suggest
+                  Teams can consist of 1 member up to 5. We strongly suggest
                   people team up to even out the workload between participants.
                 </Typography>
               </AccordionDetails>
@@ -284,7 +284,8 @@ function FAQ() {
               <AccordionDetails>
                 <Typography className={styles.faqText}>
                   Yes, all members of your team must fill out a registration
-                  form to confirm their spot in "Hack the Break"
+                  form to confirm their spot in "Hack the Break" and join the
+                  devpost team.
                 </Typography>
               </AccordionDetails>
             </Accordion>

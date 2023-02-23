@@ -13,8 +13,9 @@ function Themes() {
             workforce since the pandemic.
           </p>
           <p>
-            Build your resumé with an eye-opening hackathon project when you
-            unleash your coding skills at Hack the Break from March 11-12, 2023.
+            Build your resume with an eye-opening hackathon project where you
+            unleash your coding skills at Hack the Break from March 11th-12th,
+            2023.
           </p>
           <button className={styles.themeBtn}>
             <a

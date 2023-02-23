@@ -82,7 +82,10 @@ const HeroBanner: React.FC = () => {
           <button
             className={`${styles.bannerBtns} ${anim.fadeRightAnimation} ${anim.fadeDelay7}`}
           >
-            <a href="#faq" title="Link to Sponsor us">
+            <a
+              href="mailto:hackthebreakvancouver@gmail.com"
+              title="Link to Sponsor us"
+            >
               Sponsor us
             </a>
           </button>

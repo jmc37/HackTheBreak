@@ -32,8 +32,8 @@ function About() {
         </div>
         <div className={styles.writtenContainer}>
           <p>
-            BCIT Hack the Break 2023 is open to all BCIT students with any level
-            of coding experience.
+            BCIT Hack the Break 2023 is open to all Post-Secondary students with
+            any level of coding experience.
           </p>
           <p>
             Hack the Break aims to further develop our attendees' coding skills

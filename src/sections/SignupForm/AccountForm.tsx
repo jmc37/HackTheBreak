@@ -3,7 +3,7 @@ import { FormWrapper } from "./FormWrapper";
 type AccountData = {
   goal: string;
   team: string;
-  food: string;
+  gender: string;
   strengths: string;
 };
 
@@ -14,7 +14,7 @@ type AccountFormProps = AccountData & {
 export function AccountForm({
   goal,
   team,
-  food,
+  gender,
   strengths,
   updateFields,
 }: AccountFormProps) {
@@ -37,8 +37,8 @@ export function AccountForm({
       </select>
       <label>What is your gender?</label>
       <select
-        value={food}
-        onChange={(e) => updateFields({ food: e.target.value })}
+        value={gender}
+        onChange={(e) => updateFields({ gender: e.target.value })}
       >
         <option value="Male">Male</option>
         <option value="Female">Female</option>
