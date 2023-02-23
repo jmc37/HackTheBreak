@@ -37,6 +37,7 @@
     padding: 0.5rem;
     border-radius: 0.5rem;
     box-shadow: 0 0.25rem 0.25rem var(--shadow-light);
+    font-size: 0.9rem;
 }
 
 .reachOut {
@@ -65,5 +66,9 @@
 
     .htbContact {
         margin: 6rem auto 0;
+    }
+
+    .htbEmail {
+        font-size: 1rem;
     }
 }
