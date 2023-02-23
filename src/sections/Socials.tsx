@@ -2,6 +2,7 @@ import styles from '../styles/Socials.module.css';
 import computingClubLogo from '../assets/computingclub_logo.png';
 import bcitWicLogo from '../assets/bcitwic_logo.png';
 import coding4all from '../assets/coding4all_logo.png';
+import bcitDevHub from '../assets/bcitdevhub_logo.png';
 
 function Socials() {
 
@@ -30,11 +31,20 @@ function Socials() {
                     </li>
                     <li>
                         <a
-                            href="#"
+                            href="https://www.linkedin.com/company/codingforall123/"
                             target="_blank"
                             title="Link to Coding 4 All"
                         >
                             <img src={coding4all} />
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.linkedin.com/groups/14192658/"
+                            target="_blank"
+                            title="Link to BCIT Dev hub"
+                        >
+                            <img src={bcitDevHub} />
                         </a>
                     </li>
                 </ul>
