@@ -15,7 +15,7 @@
 .socialsContainer {
     display: flex;
     flex-direction: row;
-    gap: 0.12rem;
+    gap: 1rem;
     list-style: none;
     margin: 2.5rem 0 0;
     padding: 0;
@@ -23,8 +23,8 @@
     justify-content: space-around;
 }
 
-.socialsContainer li {
-    scale: 90%;
+.socialsContainer img {
+    width: 7rem;
 }
 
 @media (min-width: 536px) {
@@ -33,12 +33,18 @@
     }
 
     .socialsContainer {
-        gap: 4.125rem;
+        gap: 2rem;
         margin: 2rem 0 0;
         flex-wrap: nowrap;
     }
 
     .socialsSection {
         padding: 6.25rem 5rem 3.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .socialsContainer {
+        gap: 3rem;
     }
 }
