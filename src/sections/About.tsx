@@ -40,7 +40,7 @@ function About() {
             and empower emerging professionals into tech roles.
           </p>
           <p>
-            <span className="bolded">Register by March 11th</span> to secure
+            <span className="bolded">Register by March 10th</span> to secure
             your spot and get ready for electrifying challenges, mentorship
             opportunities, and networking sessions!
           </p>
