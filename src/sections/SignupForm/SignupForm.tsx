@@ -60,6 +60,7 @@ function SignupForm() {
   //Check the current date
   const currentDate = new Date();
   const showForm = currentDate < new Date("2023-3-11");
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   //Sends info to database
   function onSubmit(e: FormEvent) {
@@ -67,7 +68,7 @@ function SignupForm() {
     if (!isLastStep) return next();
     sendemail();
     excelsheet();
-    alert("Form Submitted");
+    setIsSubmitted(true);
   }
 
   function excelsheet() {
@@ -141,34 +142,43 @@ function SignupForm() {
         }
       );
   }
-
+  if (isSubmitted) {
+    return (
+      <section className={styles.signupSection}>
+        <div className="container">
+          <h2>Thank you for submitting the form!</h2>
+          <p>We'll be in touch with you soon.</p>
+        </div>
+      </section>
+    );
+  }
   return (
     <section id="signupform" className={styles.signupSection}>
-        <div className="container">
-          <div className={styles.signupDesc}>
-            <h2>Register as a hacker!</h2>
-            <p>
-              Join Hack the Break 2023 by registering{" "}
-              <br className="lineBreak" /> as a hacker in the form below:
-            </p>
-          </div>
-          <form className={styles.signupContainer} onSubmit={onSubmit}>
-            <div className={styles.signupPageCounter}>
-              {currentStepIndex + 1}/{steps.length}
-            </div>
-            {step}
-            <div className={styles.signupBtnContainer}>
-              {!isFirstStep && (
-                <button className={styles.nextBtn} type="button" onClick={back}>
-                  Back
-                </button>
-              )}
-              <button type="submit" className={styles.submitBtn}>
-                {isLastStep ? "Submit" : "Next"}
-              </button>
-            </div>
-          </form>
+      <div className="container">
+        <div className={styles.signupDesc}>
+          <h2>Register as a hacker!</h2>
+          <p>
+            Join Hack the Break 2023 by registering <br className="lineBreak" />{" "}
+            as a hacker in the form below:
+          </p>
         </div>
+        <form className={styles.signupContainer} onSubmit={onSubmit}>
+          <div className={styles.signupPageCounter}>
+            {currentStepIndex + 1}/{steps.length}
+          </div>
+          {step}
+          <div className={styles.signupBtnContainer}>
+            {!isFirstStep && (
+              <button className={styles.nextBtn} type="button" onClick={back}>
+                Back
+              </button>
+            )}
+            <button type="submit" className={styles.submitBtn}>
+              {isLastStep ? "Submit" : "Next"}
+            </button>
+          </div>
+        </form>
+      </div>
     </section>
   );
 }
