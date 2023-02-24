@@ -172,7 +172,7 @@ function SignupForm() {
         </div>
       ) : (
         <div className={styles.registrationEnd}>
-          <p>Registration is closed. Please come back next year.</p>
+          <p>Registration opens Feb 25th.</p>
         </div>
       )}
     </section>
