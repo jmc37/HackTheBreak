@@ -28,7 +28,7 @@ function Sponsors() {
           />
         </div>
         <div className={styles.sponsorBox}>
-          {/* <img className={styles.sponsorLogo} src={eaLogo} alt="EA Logo" /> */}
+          <img className={styles.sponsorLogo} src={eaLogo} alt="EA Logo" />
         </div>
         <button className={styles.sponsorBtn}>
           <a
