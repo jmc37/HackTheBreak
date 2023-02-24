@@ -21,7 +21,7 @@ type FormData = {
   linkedIn: string;
   goal: string;
   team: string;
-  food: string;
+  gender: string;
   strengths: string;
 };
 
@@ -39,7 +39,7 @@ const INITIAL_DATA: FormData = {
   linkedIn: "",
   goal: "",
   team: "Team",
-  food: "option1",
+  gender: "Male",
   strengths: "",
 };
 
@@ -56,6 +56,11 @@ function SignupForm() {
       <AddressForm {...data} updateFields={updateFields} />,
       <AccountForm {...data} updateFields={updateFields} />,
     ]);
+
+  //Check the current date
+  const currentDate = new Date();
+  const showForm = currentDate < new Date("2023-3-11");
+
   //Sends info to database
   function onSubmit(e: FormEvent) {
     e.preventDefault();
@@ -87,7 +92,7 @@ function SignupForm() {
           data.linkedIn,
           data.goal,
           data.team,
-          data.food,
+          data.gender,
           data.strengths,
         ],
       ]),
@@ -101,6 +106,7 @@ function SignupForm() {
         console.log(error);
       });
   }
+
   //Sends email to student
   function sendemail() {
     var templateParams = {
@@ -116,7 +122,7 @@ function SignupForm() {
       linkedIn: data.linkedIn,
       goal: data.goal,
       team: data.team,
-      food: data.food,
+      gender: data.gender,
       strengths: data.strengths,
     };
     emailjs
@@ -138,31 +144,33 @@ function SignupForm() {
 
   return (
     <section id="signupform" className={styles.signupSection}>
-      <div className="container">
-        <div className={styles.signupDesc}>
-          <h2>Register as a hacker!</h2>
-          <p>
-            Join Hack the Break 2023 by registering <br className="lineBreak" />{" "}
-            as a hacker in the form below:
-          </p>
-        </div>
-        <form className={styles.signupContainer} onSubmit={onSubmit}>
-          <div className={styles.signupPageCounter}>
-            {currentStepIndex + 1}/{steps.length}
+  
+        <div className="container">
+          <div className={styles.signupDesc}>
+            <h2>Register as a hacker!</h2>
+            <p>
+              Join Hack the Break 2023 by registering{" "}
+              <br className="lineBreak" /> as a hacker in the form below:
+            </p>
           </div>
-          {step}
-          <div className={styles.signupBtnContainer}>
-            {!isFirstStep && (
-              <button className={styles.nextBtn} type="button" onClick={back}>
-                Back
+          <form className={styles.signupContainer} onSubmit={onSubmit}>
+            <div className={styles.signupPageCounter}>
+              {currentStepIndex + 1}/{steps.length}
+            </div>
+            {step}
+            <div className={styles.signupBtnContainer}>
+              {!isFirstStep && (
+                <button className={styles.nextBtn} type="button" onClick={back}>
+                  Back
+                </button>
+              )}
+              <button type="submit" className={styles.submitBtn}>
+                {isLastStep ? "Submit" : "Next"}
               </button>
-            )}
-            <button type="submit" className={styles.submitBtn}>
-              {isLastStep ? "Submit" : "Next"}
-            </button>
-          </div>
-        </form>
-      </div>
+            </div>
+          </form>
+        </div>
+      
     </section>
   );
 }

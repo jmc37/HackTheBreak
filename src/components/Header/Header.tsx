@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import styles from './Header.module.css';
-import MenuSharpIcon from '@mui/icons-material/MenuSharp';
-import HelpIcon from '@mui/icons-material/Help';
-import FormatPaintIcon from '@mui/icons-material/FormatPaint';
-import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
-import HandshakeIcon from '@mui/icons-material/Handshake';
-import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
-import { grey } from '@mui/material/colors';
-import CloseIcon from '@mui/icons-material/Close';
+import React, { useState, useEffect } from "react";
+import styles from "./Header.module.css";
+import MenuSharpIcon from "@mui/icons-material/MenuSharp";
+import HelpIcon from "@mui/icons-material/Help";
+import FormatPaintIcon from "@mui/icons-material/FormatPaint";
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import HandshakeIcon from "@mui/icons-material/Handshake";
+import QuestionAnswerIcon from "@mui/icons-material/QuestionAnswer";
+import { grey } from "@mui/material/colors";
+import CloseIcon from "@mui/icons-material/Close";
 
 const Header: React.FC<{}> = () => {
   // Burger Menu
@@ -154,60 +154,60 @@ const Header: React.FC<{}> = () => {
                     </div>
                 </div>
 
-                {/* Desktop Menu */}
-                <nav className={styles.desktopMenu}>
-                    <ul>
-                        <li>
-                            <a
-                                href="#about"
-                                title="Learn About Us"
-                            >
-                                <HelpIcon fontSize="large" sx={{ color: grey[50] }}></HelpIcon>
-                                <p>About</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#theme"
-                                title="Go to Themes"
-                            >
-                                <FormatPaintIcon fontSize="large" sx={{ color: grey[50] }}></FormatPaintIcon>
-                                <p>Theme</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#schedule"
-                                title="Go to Schedule"
-                            >
-                                <CalendarMonthIcon fontSize="large" sx={{ color: grey[50] }}></CalendarMonthIcon>
-                                <p>Schedule</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#sponsors"
-                                title="Go to Sponsors"
-                            >
-                                <HandshakeIcon fontSize="large" sx={{ color: grey[50] }}></HandshakeIcon>
-                                <p>Sponsors</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#faq"
-                                title="Go to FAQ"
-                            >
-                                <QuestionAnswerIcon fontSize="large" sx={{ color: grey[50] }}></QuestionAnswerIcon>
-                                <p>FAQ</p>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            </div>
-        </header>
-    )
-}
+          {/* Desktop Menu */}
+          <nav className={styles.desktopMenu}>
+            <ul>
+              <li>
+                <a href="#about" title="Learn About Us">
+                  <HelpIcon
+                    fontSize="large"
+                    sx={{ color: grey[50] }}
+                  ></HelpIcon>
+                  <p>About</p>
+                </a>
+              </li>
+              <li>
+                <a href="#theme" title="Go to Themes">
+                  <FormatPaintIcon
+                    fontSize="large"
+                    sx={{ color: grey[50] }}
+                  ></FormatPaintIcon>
+                  <p>Theme</p>
+                </a>
+              </li>
+              <li>
+                <a href="#schedule" title="Go to Schedule">
+                  <CalendarMonthIcon
+                    fontSize="large"
+                    sx={{ color: grey[50] }}
+                  ></CalendarMonthIcon>
+                  <p>Schedule</p>
+                </a>
+              </li>
+              <li>
+                <a href="#sponsors" title="Go to Sponsors">
+                  <HandshakeIcon
+                    fontSize="large"
+                    sx={{ color: grey[50] }}
+                  ></HandshakeIcon>
+                  <p>Sponsors</p>
+                </a>
+              </li>
+              <li>
+                <a href="#faq" title="Go to FAQ">
+                  <QuestionAnswerIcon
+                    fontSize="large"
+                    sx={{ color: grey[50] }}
+                  ></QuestionAnswerIcon>
+                  <p>FAQ</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+  );
+};
 
 export default Header;

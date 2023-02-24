@@ -74,6 +74,10 @@ select, input {
     width: 100%;
 }
 
+.registrationEnd{
+    text-align: center;
+    font-size: 1.25rem
+}
 @media (min-width: 420px) {
     .signupBtnContainer {
         flex-direction: row;
