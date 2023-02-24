@@ -144,7 +144,7 @@ function SignupForm() {
 
   return (
     <section id="signupform" className={styles.signupSection}>
-      {showForm ? (
+  (
         <div className="container">
           <div className={styles.signupDesc}>
             <h2>Register as a hacker!</h2>
@@ -170,11 +170,7 @@ function SignupForm() {
             </div>
           </form>
         </div>
-      ) : (
-        <div className={styles.registrationEnd}>
-          <p>Registration opens Feb 25th.</p>
-        </div>
-      )}
+      )
     </section>
   );
 }
