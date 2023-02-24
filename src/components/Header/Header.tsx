@@ -10,8 +10,7 @@ import { grey } from '@mui/material/colors';
 import CloseIcon from '@mui/icons-material/Close';
 
 const Header: React.FC<{}> = () => {
-  // Collapsible Burger Menu
-  const [isNavExpanded, setIsNavExpanded] = useState(false);
+  // Burger Menu
   const [isNavOpen, setIsNavOpen] = useState(false);
 
     return (
@@ -44,7 +43,7 @@ const Header: React.FC<{}> = () => {
                 <button 
                     className={styles.burgerNav}
                     onClick={() => {
-                        setIsNavExpanded(!isNavExpanded);
+                        setIsNavOpen(!isNavOpen);
                     }}
                 > 
                     <MenuSharpIcon fontSize="large" aria-label="hamburger menu" sx={{ color: grey[50] }} onClick={() => setIsNavOpen((prev) => !prev)}></MenuSharpIcon>
@@ -88,6 +87,7 @@ const Header: React.FC<{}> = () => {
                             <a
                                 href="#about"
                                 title="Learn About Us"
+                                onClick={() => setIsNavOpen(false)}
                             >
                                 <HelpIcon fontSize="large" sx={{ color: grey[50] }}></HelpIcon>
                                 <p>About</p>
@@ -97,6 +97,7 @@ const Header: React.FC<{}> = () => {
                             <a
                                 href="#theme"
                                 title="Go to Themes"
+                                onClick={() => setIsNavOpen(false)}
                             >
                                 <FormatPaintIcon fontSize="large" sx={{ color: grey[50] }}></FormatPaintIcon>
                                 <p>Theme</p>
@@ -106,6 +107,7 @@ const Header: React.FC<{}> = () => {
                             <a
                                 href="#schedule"
                                 title="Go to Schedule"
+                                onClick={() => setIsNavOpen(false)}
                             >
                                 <CalendarMonthIcon fontSize="large" sx={{ color: grey[50] }}></CalendarMonthIcon>
                                 <p>Schedule</p>
@@ -115,6 +117,7 @@ const Header: React.FC<{}> = () => {
                             <a
                                 href="#sponsors"
                                 title="Go to Sponsors"
+                                onClick={() => setIsNavOpen(false)}
                             >
                                 <HandshakeIcon fontSize="large" sx={{ color: grey[50] }}></HandshakeIcon>
                                 <p>Sponsors</p>
@@ -124,6 +127,7 @@ const Header: React.FC<{}> = () => {
                             <a
                                 href="#faq"
                                 title="Go to FAQ"
+                                onClick={() => setIsNavOpen(false)}
                             >
                                 <QuestionAnswerIcon fontSize="large" sx={{ color: grey[50] }}></QuestionAnswerIcon>
                                 <p>FAQ</p>
@@ -131,8 +135,22 @@ const Header: React.FC<{}> = () => {
                         </li>
                     </ul>
                     <div className={styles.bannerBtnContainer}>
-                        <button className={styles.bannerBtns}><a href="#signupform" title="Link to Register">Register now</a></button>
-                        <button className={styles.bannerBtns}><a href="#faq" title="Link to Sponsor us">Sponsor Us</a></button>
+                        <button 
+                            className={styles.bannerBtns} 
+                            onClick={() => setIsNavOpen(false)}
+                        >
+                            <a href="#signupform" title="Link to Register">
+                                Register now
+                            </a>
+                        </button>
+                        <button 
+                            className={styles.bannerBtns} 
+                            onClick={() => setIsNavOpen(false)}
+                        >
+                            <a href="#faq" title="Link to Sponsor us">
+                                Sponsor Us
+                            </a>
+                        </button>
                     </div>
                 </div>
 
