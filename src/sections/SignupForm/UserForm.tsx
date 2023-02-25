@@ -52,7 +52,7 @@ export function UserForm({
       <label>School Email</label>
       <input
         required
-        type="text"
+        type="email"
         value={schoolEmail}
         onChange={(e) => updateFields({ schoolEmail: e.target.value })}
       />{" "}

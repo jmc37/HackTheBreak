@@ -73,10 +73,10 @@ function FAQ() {
               </AccordionSummary>
               <AccordionDetails>
                 <Typography className={styles.faqText}>
-                  This event is open to Post-Secondary students with a limited
-                  number of spots available. Participants must be currently
-                  enrolled in a post-secondary school and provide email/student
-                  number to confirm enrollment.
+                  This event is open to Post-Secondary students in BC Canada
+                  with a limited number of spots available. Participants must be
+                  currently enrolled in a post-secondary school and provide
+                  email/student number to confirm enrollment.
                 </Typography>
               </AccordionDetails>
             </Accordion>
