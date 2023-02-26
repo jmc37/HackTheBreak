@@ -11,32 +11,25 @@ function Sponsors() {
       <div className="container">
         <h2>Event Sponsors</h2>
         <div className={styles.sponsorBox}>
-          <a href="https://www.bcitsa.ca/">
-            <img
-              className={styles.sponsorLogoBCITSA}
-              src={bcitsaLogo}
-              alt="BCIT Student Association Logo"
-            />
-          </a>
-          <a href="https://www.mastercard.ca/">
-            <img
-              className={styles.sponsorLogo}
-              src={mastercardLogo}
-              alt="Mastercard Logo"
-            />
-          </a>
-          <a href="https://www.sap.com/index.html">
-            <img
-              className={styles.sponsorLogo}
-              src={sapLogo}
-              alt="SAP Software Solutions Logo"
-            />
-          </a>
+          <img
+            className={styles.sponsorLogoBCITSA}
+            src={bcitsaLogo}
+            alt="BCIT Student Association Logo"
+          />
+
+          <img
+            className={styles.sponsorLogo}
+            src={mastercardLogo}
+            alt="Mastercard Logo"
+          />
+          <img
+            className={styles.sponsorLogo}
+            src={sapLogo}
+            alt="SAP Software Solutions Logo"
+          />
         </div>
         <div className={styles.sponsorBox}>
-          <a href="https://www.ea.com/">
-            <img className={styles.sponsorLogo} src={eaLogo} alt="EA Logo" />
-          </a>
+          <img className={styles.sponsorLogo} src={eaLogo} alt="EA Logo" />
         </div>
         <button className={styles.sponsorBtn}>
           <a
