@@ -15,22 +15,35 @@ function Sponsors() {
             className={styles.sponsorLogoBCITSA}
             src={bcitsaLogo}
             alt="BCIT Student Association Logo"
+            onClick={() => window.open("https://www.bcitsa.ca/", "_blank")}
           />
 
           <img
             className={styles.sponsorLogo}
             src={mastercardLogo}
             alt="Mastercard Logo"
+            onClick={() => window.open("https://www.mastercard.ca/", "_blank")}
           />
+
           <img
             className={styles.sponsorLogo}
             src={sapLogo}
             alt="SAP Software Solutions Logo"
+            onClick={() =>
+              window.open("https://www.sap.com/canada/index.html", "_blank")
+            }
           />
         </div>
+
         <div className={styles.sponsorBox}>
-          <img className={styles.sponsorLogoEA} src={eaLogo} alt="EA Logo" />
+          <img
+            className={styles.sponsorLogoEA}
+            src={eaLogo}
+            alt="EA Logo"
+            onClick={() => window.open("https://www.ea.com/", "_blank")}
+          />
         </div>
+
         <button className={styles.sponsorBtn}>
           <a
             className={styles.devpostLink}
