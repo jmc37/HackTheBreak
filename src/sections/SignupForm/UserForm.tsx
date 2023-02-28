@@ -24,7 +24,7 @@ export function UserForm({
 }: UserFormProps): JSX.Element {
   return (
     <FormWrapper title="User Details">
-      <label>Name</label>
+      <label> Full Name</label>
       <input
         autoFocus
         required
