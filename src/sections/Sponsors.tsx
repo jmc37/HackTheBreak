@@ -37,7 +37,7 @@ function Sponsors() {
 
         <div className={styles.sponsorBox}>
           <img
-            className={styles.sponsorLogoEA}
+            className={styles.sponsorLogo}
             src={eaLogo}
             alt="EA Logo"
             onClick={() => window.open("https://www.ea.com/", "_blank")}
