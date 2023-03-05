@@ -1,6 +1,5 @@
 import styles from "../styles/Sponsors.module.css";
 import bcitsaLogo from "../assets/bcitsa_logo.png";
-import ilmLogo from "../assets/ilm_logo.png";
 import sapLogo from "../assets/sap_logo.png";
 import eaLogo from "../assets/ea_logo.png";
 import mastercardLogo from "../assets/mastercard_logo.png";
