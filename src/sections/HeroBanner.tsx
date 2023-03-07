@@ -65,10 +65,14 @@ const HeroBanner: React.FC = () => {
           <div
             className={`${styles.countdownValuesBox} ${anim.fadeRightAnimation} ${anim.fadeDelay4}`}
           >
-            {timerComponents.length ? timerComponents : <span>Time's up!</span>}
+            {timerComponents.length ? (
+              timerComponents
+            ) : (
+              <span>Event Started!</span>
+            )}
           </div>
           <p className={`${anim.fadeRightAnimation} ${anim.fadeDelay5}`}>
-            Until Registration Closes
+            Until Event starts
           </p>
         </div>
         <div className={styles.bannerBtnContainer}>

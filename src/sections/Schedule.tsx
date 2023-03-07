@@ -32,7 +32,7 @@ function Schedule() {
               <p className={styles.activityName}>Judging Begins</p>
             </div>
             <div className={styles.activityBox}>
-              <p className={styles.activityTime}>14:30</p>
+              <p className={styles.activityTime}>15:30</p>
               <p className={styles.activityName}>Winners Announced!</p>
             </div>
           </div>

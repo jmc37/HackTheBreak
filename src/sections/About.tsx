@@ -16,12 +16,12 @@ function About() {
           </div>
           <div className={styles.statBoxLight}>
             <p>
-              200+ <br /> Hackers
+              250+ <br /> Hackers
             </p>
           </div>
           <div className={styles.statBoxDark}>
             <p>
-              tba <br /> Prizes
+              $5000+ <br /> Prizes
             </p>
           </div>
           <div className={styles.statBoxDark}>
@@ -32,16 +32,16 @@ function About() {
         </div>
         <div className={styles.writtenContainer}>
           <p>
-            BCIT Hack the Break 2023 is open to all Post-Secondary students with
-            any level of coding experience.
+            BCIT Hack the Break 2023 is open to all Post-Secondary BC students
+            with any level of coding experience.
           </p>
           <p>
             Hack the Break aims to further develop our attendees' coding skills
             and empower emerging professionals into tech roles.
           </p>
           <p>
-            <span className="bolded">Register by March 10th</span> to secure
-            your spot and get ready for electrifying challenges, mentorship
+            <span className="bolded">Register by March 7th</span> to secure your
+            spot and get ready for electrifying challenges, mentorship
             opportunities, and networking sessions!
           </p>
         </div>
