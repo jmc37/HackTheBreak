@@ -5,7 +5,7 @@
 }
 
 .sponsorLogoBCITSA {
-    scale: 50%;
+    scale: 70%;
 }
 
 .sponsorLogoILM {
@@ -17,6 +17,13 @@
     padding-bottom: 1rem;
 }
 
+.sponsorLogo:hover {
+    cursor: pointer;
+  }
+
+.sponsorLogoBCITSA:hover {
+    cursor: pointer;
+  }  
 .sponsorBtn {
     display: flex;
     margin: 4rem auto 0;

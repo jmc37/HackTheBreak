@@ -3,6 +3,7 @@ import bcitsaLogo from "../assets/bcitsa_logo.png";
 import sapLogo from "../assets/sap_logo.png";
 import eaLogo from "../assets/ea_logo.png";
 import mastercardLogo from "../assets/mastercard_logo.png";
+import lululemonLogo from "../assets/lululemon_Logo.png";
 
 function Sponsors() {
   return (
@@ -18,12 +19,13 @@ function Sponsors() {
           />
 
           <img
-            className={styles.sponsorLogo}
+            className={styles.sponsorLogoBCITSA}
             src={mastercardLogo}
             alt="Mastercard Logo"
             onClick={() => window.open("https://www.mastercard.ca/", "_blank")}
           />
-
+        </div>
+        <div className={styles.sponsorBox}>
           <img
             className={styles.sponsorLogo}
             src={sapLogo}
@@ -32,8 +34,13 @@ function Sponsors() {
               window.open("https://www.sap.com/canada/index.html", "_blank")
             }
           />
+          <img
+            className={styles.sponsorLogo}
+            src={lululemonLogo}
+            alt="Lululemon Logo"
+            onClick={() => window.open("https://shop.lululemon.com/", "_blank")}
+          />
         </div>
-
         <div className={styles.sponsorBox}>
           <img
             className={styles.sponsorLogo}
