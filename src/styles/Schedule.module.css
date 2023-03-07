@@ -82,7 +82,7 @@ h2 {
 
 @media (min-width: 1100px) {
     .scheduleContainer::after {
-        top: -160%;
+        top: -145%;
         height: 56.25rem;
     }
 }
