@@ -10,24 +10,24 @@ function Sponsors() {
     <section id="sponsors">
       <div className="container">
         <h2>Event Sponsors</h2>
-        <div className={styles.sponsorBox}>
+        <div className={styles.sponsorBoxTier1}>
           <img
-            className={styles.sponsorLogoBCITSA}
+            className={`${styles.sponsorLogo} ${styles.sponsorLogoTier1}`}
             src={bcitsaLogo}
             alt="BCIT Student Association Logo"
             onClick={() => window.open("https://www.bcitsa.ca/", "_blank")}
           />
 
           <img
-            className={styles.sponsorLogoBCITSA}
+            className={`${styles.sponsorLogo} ${styles.sponsorLogoTier1}`}
             src={mastercardLogo}
             alt="Mastercard Logo"
             onClick={() => window.open("https://www.mastercard.ca/", "_blank")}
           />
         </div>
-        <div className={styles.sponsorBox}>
+        <div className={styles.sponsorBoxTier2}>
           <img
-            className={styles.sponsorLogo}
+            className={`${styles.sponsorLogo} ${styles.sponsorLogoTier2}`}
             src={sapLogo}
             alt="SAP Software Solutions Logo"
             onClick={() =>
@@ -35,15 +35,15 @@ function Sponsors() {
             }
           />
           <img
-            className={styles.sponsorLogo}
+            className={`${styles.sponsorLogo} ${styles.sponsorLogoTier2}`}
             src={lululemonLogo}
             alt="Lululemon Logo"
             onClick={() => window.open("https://shop.lululemon.com/", "_blank")}
           />
         </div>
-        <div className={styles.sponsorBox}>
+        <div className={styles.sponsorBoxTier3}>
           <img
-            className={styles.sponsorLogo}
+            className={`${styles.sponsorLogo} ${styles.sponsorLogoTier3}`}
             src={eaLogo}
             alt="EA Logo"
             onClick={() => window.open("https://www.ea.com/", "_blank")}

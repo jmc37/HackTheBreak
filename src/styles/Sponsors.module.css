@@ -1,29 +1,41 @@
-.sponsorBox {
+.sponsorBoxTier1, .sponsorBoxTier2, .sponsorBoxTier3 {
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
 }
 
-.sponsorLogoBCITSA {
-    scale: 70%;
-}
-
-.sponsorLogoILM {
-    scale: 60%;
-}
-
 .sponsorLogo {
-    scale: 70%;
     padding-bottom: 1rem;
+    height: fit-content;
 }
 
 .sponsorLogo:hover {
     cursor: pointer;
-  }
+}
 
-.sponsorLogoBCITSA:hover {
-    cursor: pointer;
-  }  
+.sponsorBoxTier1 {
+    margin-top: 2rem;
+}
+
+.sponsorBoxTier3 {
+    height: 6.25rem;
+    display: flex;
+    justify-content: center;
+}
+
+.sponsorLogoTier1 {
+    scale: 100%;
+    margin: auto auto 1rem;
+}
+
+.sponsorLogoTier2 {
+    scale: 60%;
+}
+
+.sponsorLogoTier3 {
+    scale: 55%;
+}
+
 .sponsorBtn {
     display: flex;
     margin: 4rem auto 0;
@@ -50,8 +62,8 @@
     border-bottom: 0.1rem solid var(--secondary-orange);
 }
 
-@media (min-width: 400px) {
-    .sponsorBox {
+@media (min-width: 420px) {
+    .sponsorBoxTier2, .sponsorBoxTier3 {
         flex-direction: row;
         flex-wrap: wrap;
         margin: 0 auto;
@@ -59,10 +71,40 @@
         justify-content: space-around;
     }
 
-    .sponsorLogoBCITSA, .sponsorLogoILM {
-        scale: 65%;
+    .sponsorBoxTier3 {
+        align-content: center;
     }
-    
+
+    .sponsorLogoTier3 {
+        scale: 40%;
+    }
+
+    .sponsorLogo {
+        padding-bottom: 0;
+    }
+}
+
+@media (min-width: 635px) {
+    .sponsorBoxTier1 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 1rem 0;
+        justify-content: space-evenly;
+        gap: 4rem;
+    }
+
+    .sponsorBoxTier2, .sponsorBoxTier3 {
+        padding: 0;
+    }
+
+    .sponsorLogoTier1 {
+        scale: 120%;
+    }
+
+    .sponsorLogoTier2 {
+        margin: auto;
+    }
 }
 
 @media (min-width: 768px) {
@@ -70,13 +112,5 @@
         font-size: 1.125rem;
         padding: 0.8125rem 1.875rem;
         margin: 8rem auto 0;
-    }
-
-    .sponsorLogo, .sponsorLogoBCITSA, .sponsorLogoILM {
-        scale: 85%;
-    }
-
-    .sponsorBox {
-        gap: 4rem;
     }
 }
