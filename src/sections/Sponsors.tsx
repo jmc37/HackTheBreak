@@ -3,7 +3,7 @@ import bcitsaLogo from "../assets/bcitsa_logo.png";
 import sapLogo from "../assets/sap_logo.png";
 import eaLogo from "../assets/ea_logo.png";
 import mastercardLogo from "../assets/mastercard_logo.png";
-import lululemonLogo from "../assets/lululemon_Logo.png";
+import lululemonLogo from "../assets/lululemon_logo.png";
 
 function Sponsors() {
   return (
